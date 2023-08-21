@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>值的比较</title>
+</head>
+<body>
+    
+    <script>
+        /*
+            大于 / 小于：a > b，a < b。
+            大于等于 / 小于等于：a >= b，a <= b。
+            检查两个值的相等：a == b，请注意双等号 == 表示相等性检查，而单等号 a = b 表示赋值。
+            检查两个值不相等：不相等在数学中的符号是 ≠，但在 JavaScript 中写成 a != b。
+        */
+
+        /*
+        比较的结果为Boolean类型
+
+
+
+        字符串比较
+            在比较字符串的大小时，JavaScript 会使用“字典（dictionary）”或“词典（lexicographical）”顺序进行判定。
+            换言之，字符串是按字符（母）逐个进行比较的。
+
+            字符串比较算法：
+            1.首先比较字符串首字母的大小
+            2.如果一方首字母大于或小于另一方，比较结束
+            3.首字母相等的情况下，则取第二位进行比较。
+            4.重复上述步骤，直到比较完成某些字符串的所有字符为止。
+            5.如果同时比较完，则相等。否则谁还有字符串 谁大。
+            其实不是字典顺序，二十Inicode编码顺序。
+
+        不同类型间的比较
+            当对不同类型的值进行比较时，会先将其转换为数字在进行判定
+
+            alert('2'>1) //true
+            alert('01'==1)//true
+
+
+        可能会遇到这种情况
+            0 == '0'
+
+        严格相等 ===
+            == 在比较时会做类型转换，但是 严格相等不会 0 ==='0'//false
+        
+        null 和 undefined 
+            null === undefined //false
+            null == undefined //true
+
+        奇怪的null vs 0
+            null > 0 //false
+            null == 0 //false
+            null >= 0 //true
+                为什么会出现这个情况呢
+                因为 == 和> < >=的比较逻辑是相互独立的，进行比较时 null会被转化为
+                数字，因此null 被转化为0 ，这就是为什么 null >= 0 为true的原因
+        
+        独立的undefined  
+            undefined不应该与其他值比较，还记得 undefined 转化为Number的时候是NaN吗
+            NaN是一个特殊的数字类型，它不会与任何值相等 包括它自身，所以
+                undefined > 0 false
+                undefined <0 false
+                undefined == 0 false
+        
+        避免问题：这些稀奇古怪的规则我们不需要都记住（面试的时候除外，有些公司就喜欢出这种题）
+            在实际开发中 我们应该使用 === 严格相等来比较一些值，其他的但凡有undefined的时候我们也需要注意
+            还有就是 不要使用>= > <= <去比较一个可能为null/undefined的变量。
+            我想你也不希望出现一些千奇百怪的问题 解决了一天的时间结果发现是比较上出了问题吧
+        
+        总结：
+            比较运算符始终返回布尔值。
+            字符串的比较，会按照“词典”顺序逐字符地比较大小。
+            当对不同类型的值进行比较时，它们会先被转化为数字（不包括严格相等检查）再进行比较。
+            在非严格相等 == 下，null 和 undefined 相等且各自不等于任何其他的值。
+            在使用 > 或 < 进行比较时，需要注意变量可能为 null/undefined 的情况。比较好的方法是单独检查变量是否等于 null/undefined。
+
+
+            */
+
+        /*
+            5 > 4 //true
+            "apple" > "pineapple" //false 
+            "2" > "12" //true
+            undefined == null //true
+            undefined === null //false
+            null == "\n0\n" //false
+            null === +"\n0\n" //false   
+
+            数字间比较大小，显然得 true。
+            按词典顺序比较，得 false。"a" 比 "p" 小。
+            与第 2 题同理，首位字符 "2" 大于 "1"。
+            null 只与 undefined 互等。
+            严格相等模式下，类型不同得 false。
+            与第 4 题同理，null 只与 undefined 相等。
+            不同类型严格不相等。
+        */
+
+    </script>
+</body>
+</html>

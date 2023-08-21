@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>类型转换</title>
+</head>
+<body>
+    <script>
+
+        /*
+        alert会自动将任何值都转换为字符串以进行显示。算数运算符会将值转换为数字。
+        */
+
+        /*
+        字符串转换：最明显的转换 ,就是将内容加上 string
+        */
+    
+        /*
+        number转换规则
+        在算数函数和表达式中，会自动进行number类型转换
+        alert('6'/'2')
+
+        转换规则：
+        undefined:NaN
+        null : 0
+        true 和false : 1 and 0
+        string:去掉首尾空白字符串(空格、换行符\n 、制表符\t等)后的纯数字字符串中含有的数字。如果剩余字符串为空，则转换结果为 0。否则，将会从剩余字符串中“读取”数字。当类型转换出现 error 时返回 NaN。
+        (就一句话 当内容中只剩下 数字和空格的时候 就会被转为数字，否则就是NaN)
+        
+        布尔类型
+        0、空字符串、null、undefined和NaN 为false
+        其他值为true
+        
+        */
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>变量</title>
+</head>
+<body>
+    <script>
+
+        /*
+        变量：数据的命名存储
+
+        声明方式：
+        let
+        const
+        var
+
+        变量命名
+        1.必须仅有字母、数字、符号$和_
+        2.首字母必须非数字
+        例如：
+        let name;
+        let testName;
+
+        命名法：
+        驼峰式命名法：
+        let addCount;
+
+        短横线命名法：
+        let add_count
+
+        注意：变量命名区分大小写，允许非英文字母，但不推荐
+
+        保留字：一些被官方保留的字段，比如class var return 等
+        保留字链接：https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#keywords
+
+        常量：
+        const
+
+        const a = 1;
+        使用const声明的变量是不可能被修改的，
+        a = 2; 报错
+
+        大写形式的常量
+
+        const COLOR_RED = 'red'
+        */
+
+        /*
+           声明两个变量：admin 和 name。
+            将值 "John" 赋给 name。
+            从 name 变量中拷贝其值给 admin。
+            使用 alert 显示 admin 的值（必须输出 “John”）。
+        */
+       let admin;
+       let name;
+       name = "John";
+       admin = name;
+        alert(admin)
+    </script>
+</body>
+</html>

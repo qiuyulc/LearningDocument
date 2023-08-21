@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数据类型</title>
+</head>
+<body>
+    <script>
+        /*
+            JavaScript中共有八种数据类型 ，七种基本类型和一种引用类型
+
+            Number：表示整数和浮点数 特殊的值(Infinity ,-Infinty ,NaN);
+                NaN:表示一种计算错误 比如
+                console.log('not'/2);
+                特点：任何对NaN的进一步数学运算都会返回NaN，只有一个例外 NaN ** 0 结果为1
+
+            BigInt：在JavaScript中 number无法安全的表示大于 (2的53次方-1 及 9007199254740991)
+                和(-的2的53次方-1的整数)，超出这个数会造成精度丢失的问题
+                BigInt就是为了解决这个问题而存在的，它可以表示任意长度的整数
+
+                声明方式：
+                const bigInt = 1234567890123456789012345678901234567890n;
+
+            String: 字符串
+                包含字符和字符串，JavaScript中没有character类型
+                语法：
+                let a = '1';
+                let b = "2";
+                let c = `456`;//反引号 可以使用${内容} 对字符串进行拼接
+                let d = `${c}-789`;// 456-789
+
+            Boolean：(逻辑类型)
+                true和false
+            
+            null：表示一个空值
+
+            undefined：表示一个已经声明但是没有赋值
+
+            Object类型和Symbol类型
+                Object对象
+            Symbol：用于创建对象的唯一标识符
+
+            typeof运算符
+            语法：
+                typeof 1
+                typeof(1)
+            返回数据的类型
+        */
+        console.log(
+            typeof 10,
+            typeof '12',
+            typeof true,
+            typeof 10n,
+            typeof null,
+            typeof undefined,
+            typeof {},
+            typeof Symbol('id')
+        )
+        //number string boolean bigint object undefined object symbol
+        //注意 typeof的返回值是字符串 'number'....
+        //typeof null ==> object 这是js的一个错误，实际上它并不是object
+    </script>
+</body>
+</html>
