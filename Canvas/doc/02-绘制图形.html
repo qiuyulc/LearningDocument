@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>绘制图形</title>
+  </head>
+  <body>
+    <canvas id="canvas" width="400px" height="160px"></canvas>
+
+    <script>
+      const canvas = document.querySelector("#canvas");
+      const ctx = canvas.getContext("2d");
+
+      ctx.fillRect(10, 10, 100, 100);
+      ctx.clearRect(15, 15, 90, 90);
+      ctx.strokeRect(20, 20, 80, 80);
+    </script>
+
+    <script>
+      /*
+        目标：绘制矩形、三角形、直线、圆弧和曲线。  
+
+        栅格：
+        栅格的起点是在canvas的左上角为起点即(0,0); 所有元素都是相对于 起点进行定位 对于元素来说 相对的是 左上角对于 起点的距离坐标
+
+        不同于 SVG，<canvas> 只支持两种形式的图形绘制：矩形和路径（由一系列点连成的线段）。所有其他类型的图形都是通过一条或者多条路径组合而成的。
+
+        绘制矩形：
+            方法：
+                1.fillRect(x,y,w,h);绘制一个填充矩形
+                2.strokeRect(x,y,w,h); 绘制一个矩形的边框
+                3.clearRect(x,y,w,h);清除指定矩形区域，让清除部分完全透明。
+        */
+    </script>
+  </body>
+</html>
