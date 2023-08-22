@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch</title>
+</head>
+<body>
+    <script>    
+        /*
+            switch 
+
+            格式
+
+            switch(type){
+                case type1 :{
+                    break;
+                }
+                case type2 :{
+                    breack;
+                }
+                default:{
+
+                }
+            }
+
+            type 和 type1、type2 进行 严格匹配 ，与type1相等就执行 type1的执行体中的内容
+            没有就执行default中的内容
+
+            break 需要在每个case分类中存在，不存在的话 ，执行完当前case下的内容 会继续执行
+            直到遇到 下一个break 或者到default
+
+            这时候可以进行一个骚操作：示例代码在下方
+
+
+            case 匹配项可以是任意表达式
+            
+
+        */
+
+
+        // let a = 2 + 2;
+
+        // switch (a) {
+        //     case 3:{
+        //         alert( 'Too small' );
+        //         break;
+        //     }
+        //     case 4:{
+        //         alert( 'Exactly!' );
+        //         break;
+        //     }
+                
+        //     case 5:{
+        //         alert( 'Too big' );
+        //         break;
+        //     }
+                
+        //     default:{
+        //         alert( "I don't know such values" );
+        //     } 
+        // }
+
+        //骚操作
+
+        let week = '周四'
+        switch (week) {
+            case '周一':{
+                
+            }
+            case '周二':{
+                
+            }
+            case '周三':{
+                
+            }
+            case '周四':{
+                
+            }
+            case '周五' :{
+                console.log('上课')
+                break;
+            }
+            case '周六':{
+                console.log( '休息' );
+                break;
+            }
+                
+            case '周天':{
+                console.log( '休息' );
+                break;
+            }
+        }
+    </script>
+</body>
+</html>

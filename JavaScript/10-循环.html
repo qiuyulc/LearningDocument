@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>循环</title>
+</head>
+<body>
+    <script>
+        /*
+            while循环
+                格式：
+                while(condition){}
+
+            do...while 循环 
+                格式：
+                do{
+                    
+                }while(condition)
+
+                和while的区别 不管while是否满足条件 都会执行一次循环体中的内容
+        
+            for() 循环
+                格式:
+                for(let i = 0;i < 3;i++){
+
+                }
+
+                提取内容:
+                let i = 0;
+                for(;i<3;i++){
+
+                }
+
+                无限循环
+                for(;;){
+
+                }
+
+                跳出循环体
+                break、continue
+
+                区别：
+                    break 跳出循环
+                    continue 跳出本层循环 执行下一次循环
+
+                break 跳出指定循环
+
+                labelName: for(...){
+
+                }
+
+        */
+
+
+        // let i = 0;
+        // while(i<3){
+        //     console.log(i);//0 1 2
+        //     i++;
+        // }
+
+        // let j = 0;
+        // do{
+        //     console.log(j);
+        //     j++;
+        // }while(j>1)
+
+        outer:for(let i=0;i<3;i++){
+            for(let j= 0;j<2;j++){
+                if(i === 1){
+                    // break outer; 1
+                    break outer;
+                }
+                console.log(`${i} ${j}`)
+            }
+ 
+        }
+        // 1.
+        // 0 0
+        // 0 1
+        let k = 3;
+        while(k){
+            alert(--k);
+        }
+        // 这段代码会执行几次 分别输出什么值
+        // 执行三次 分别输出2 1 0
+    </script>
+</body>
+</html>

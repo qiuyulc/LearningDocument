@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>函数</title>
+</head>
+<body>
+    <script>
+        /*
+            函数声明
+            function name(...age){
+                函数内容...
+            }
+        
+            局部变量
+
+            function getData(){
+                let a = 1;
+            }
+            console.log(a);//报错
+
+            外部变量
+
+            const b = 3.14;
+            function getB(){
+                console.log(b);//3.14
+            }
+
+            这里有作用域的概念
+            一个函数就是一个独立的作用域
+             只可以从内部作用域访问外部的变量 外部不可以访问内部内容。
+
+            参数：
+            function showMessage(from, text) { // 参数：from 和 text
+                alert(from + ': ' + text);
+            }
+
+            showMessage('Ann', 'Hello!'); // Ann: Hello! (*)
+            showMessage('Ann', "What's up?"); // Ann: What's up? (**)
+            
+            由下面的结果可以得知，在传递参数时，基础类型 传递的是拷贝后的值
+            引用类型传递的是 引用地址
+        
+
+            默认值
+
+            function setName(name='秋水'){
+                console.log(name);
+            }
+
+            setName();//秋水
+            setName('秋雨')//秋雨
+
+            返回值：
+                当一个函数中有return的时候 我们称为这个函数有返回值
+                没有return的时候 我们称这个函数没有返回值，或者说这个函数的返回值
+                为undefined
+
+            函数命名
+                一般前缀为一个动词 get calc create等
+        
+            */
+        // 传递参数 传递的是什么？
+        // const from = {
+        //     name:'小红'
+        // }
+        // function showMessage(from){
+        //     from.name = "小白"
+        //     console.log(from,'函数内部')
+        // }
+
+        // showMessage(from);
+        // console.log(from,'函数外部')
+
+        // const name = '秋雨';
+        // function setName(name){
+        //     name = '不良人';
+        //     console.log(name)
+        // }
+
+        // setName(name);
+        // console.log(name)
+    </script>
+</body>
+</html>

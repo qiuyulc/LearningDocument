@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>函数表达式</title>
+</head>
+<body>
+    <script>
+        // "use strict"
+        /*
+            前一个函数中我们知道 
+                函数可以通过函数声明的方式来创建
+                function 函数名(){
+
+                }
+            其实还有另一种方式,我们称为函数表达式
+                const name = function(){
+
+                }
+            
+            函数是一个值 ，不论是那种方式创建的
+                function sayHi(){
+
+                }
+                const func = sayHi;
+                func()
+                sayHi()
+                这两种调用方式没有区别
+
+            回调函数
+                将函数作为参数传递进去
+                function ask(question, yes, no) {
+                    if (confirm(question)) yes()
+                    else no();
+                }
+
+                function showOk() {
+                    alert( "You agreed." );
+                }
+
+                function showCancel() {
+                    alert( "You canceled the execution." );
+                }
+
+                // 用法：函数 showOk 和 showCancel 被作为参数传入到 ask
+                ask("Do you agree?", showOk, showCancel);
+
+            函数声明 vs 函数表达式
+
+            函数声明：由function 声明的函数
+            函数表达式： 有let const var 声明变量后 赋值的函数
+
+            区别：JavaScript引擎会在什么时候去创建函数
+
+            function 在js文件执行时 会被先行提升到顶级 所以在函数前或者函数后都可以调用
+            变量声明的方式 需要在js代码执行到当前位置后 才可以调用
+
+            严格模式下，当一个函数声明在一个代码块内时，它在该代码块内的任何位置都是可见的。但在代码块外不可见。
+        */
+
+
+        // let age = 18;
+        // if(age<18){
+        //     function get(){
+        //         console.log('18以下')
+        //     }
+        // }else{
+        //     function get(){
+        //         console.log('18以上')
+        //     }
+        // }
+        // get(); //非严格模式 会打印 18以上 严格模式会报错提示找不到get这个函数
+        // 因为在严格模式中 一个{} 就是一个作用域 外部作用域不能访问内部作用域的内容
+    </script>
+</body>
+</html>
