@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>对象引用和复制</title>
+</head>
+<body>
+    <script>
+        /*
+            还记得之前的基本类型吗
+                let name = '秋水';
+                let age = 18;
+            他们是怎么进行存储的
+                实际上他们是存储在栈中的
+            那对象呢？
+                在对象上，在栈中存储的是对象的引用地址，
+                而对象的内容是存在堆中的。
+            
+            复制：
+                基本类型复制的值
+                引用类型复制的存放在栈中的引用地址
+            
+            const obj = {
+                name:'秋水',
+                age:18
+            }
+            const obj1 = obj;
+
+            obj.name = '秋雨'
+            console.log(obj1.name) //秋雨
+            
+            对象的比较：
+                只有当a ，b都是引用同一个对象时， a === b 
+                let a = {};
+                let b = a;
+                console.log(a == b);//true
+                console.log(a === b);//true
+
+                两个独立的对象 是不会相等的
+
+                let a = {};
+                let b = {};
+                console.log(a === b);//false
+                console.log(a == b);//false
+
+            克隆：
+                浅克隆 vs 深克隆
+                浅克隆：
+                    let a = { name : '秋水', age : 18 ,standing:['教员','散打冠军']  };
+                    let b = {};
+                    for(let key in a){
+                        b[key] = a[key]
+                    }
+                    console.log(b);//{ name : '秋水', age : 18 ,standing:['教员','散打冠军'] };
+                为什么说这是浅克隆，因为如果你修改a 中 standing的值你会发现b也改了
+                只拷贝一层的我们称为浅克隆    
+
+                深克隆：完全分离成两个对象
+                可以看下 lodash库中的 cloneDeep
+
+            Object.assign();
+
+            合并对象属性
+                let a = {
+                    name:'秋雨'
+                }
+                let b = {
+                    age:18
+                }
+                const obj = Object.assign({},a,b);//{name:'秋雨',age:18}
+                相同的键 后面的对象会覆盖前面的对象的值
+
+            const 声明对象可以被修改
+            const a = { 
+                name:'秋水'
+            }
+            a.name = '秋雨';
+            console.log(a); //{name: '秋雨'} 
+
+            不过需要记住 只可以修改a的对象属性 不可以改变a的引用地址
+            
+        */
+    </script>
+</body>
+</html>

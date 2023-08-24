@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>对象</title>
+</head>
+<body>
+    <script>
+        /*
+            对象：
+                用来存储键值对和更复杂的实体
+            形式: 
+                let obj = {key:value}
+                key 的类型为string value可以是任意类型
+            创建方式：
+            let obj = {}; //字面量
+            let obj1 = new Object() //构造函数
+
+            方括号语法
+                obj['name'] = '秋水' === obj.name = '秋水'
+
+            计算属性
+            let key = 'age';
+            let obj = {
+                [key]:10
+            }
+
+            属性值简写：
+            let name = '秋水';
+            let age = 18
+            let obj = {
+                name,
+                age
+            }
+
+            属性名的限制：
+                基本没有限制
+
+            属性存在测试 in 操作符
+                
+                let obj = {name :'秋水',age:18};
+                console.log('name' in obj)// true
+                console.log('sex' in obj)// false
+                作用：当一个属性的值是会被转换为false的时候 三目和if形式的判断就不成立了
+                let obj = {name:undefined};
+                conole.log(obj.name ? true : false);// false
+                console.log('name' in obj) // true
+
+            for...in 循环
+                遍历一个对象的所有属性和值
+
+                格式：
+                let obj = {name:'秋水',age:18};
+
+                for(let key in obj){
+                    console.log(key +'-'+obj[key]);
+                    //name-秋水
+                    //age-18
+                }
+
+            对象的属性排序
+                有特殊的顺序，整数属性会进行排序，其他属性则按照创建时的顺序来显示。
+        */
+    </script>
+</body>
+</html>
