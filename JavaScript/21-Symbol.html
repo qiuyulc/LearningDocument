@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symbol</title>
+</head>
+<body>
+    <script>
+
+        /*
+            根据规范只有两种原始类型可以用作对象属性键
+            1.字符串类型
+            2.symbol类型
+
+            symbol 
+            symbol值表示唯一的标识符
+            创建方式
+            let id = Symbol();
+
+            创建时，我们可以给symbol一个描述（也成为了symbol名），这在代码调试时非常有用
+            let id = Symbol('id');
+
+            symbol 保证是唯一的，即使我们创建了许多具有相同描述的symbol，他们的值也是不同的
+
+            let id1 = Symbol('id');
+            let id2 = Symbol('id');
+
+            id1 == id2 // false
+
+            symbol不会被自动转换为字符串
+
+            let id = Symbol('id');
+            alert(id);//报错
+
+            显示一个symbol的方式
+            1. toString() 直接显式调用toString()
+            2. description属性，只显示描述
+            let id = Symbol('id');
+            console.log(id.description); //id 返回描述信息
+
+            隐藏属性
+            let user = {
+                name:'Join'
+            }
+
+            let id = Symbol('id');
+            user[id] = 1;
+            alert(user[id]);//1
+
+            对象字面量中的symbol
+            let id = Symbol('id');
+            let user = {
+                name:'John',
+                [id]:123
+            }
+
+            symbol 在for...in中会被跳过
+
+            symbol属性不会参与for in 循环
+
+            let id = Symbol('id');
+            let user = {
+                name:'John',
+                [id]:123
+            }
+            for(let key in user){
+                console.log(key) //name
+            }
+            Object.keys 也会忽略它 
+            但是 Object.assign 会同时复制字符串和symbol属性
+
+
+            全局symbol
+
+                全局symbol注册表
+                    Symbol.for('id')
+                    先从注册表中读取相同描述的symbol，有就返回该symbol
+                    没有就创建后再返回
+
+                    Symbol.keyFor(key)
+                    返回使用全局symbol 注册表来查找symbol的键，所以不适用于非全局symbol。如果symbol不是全局的
+                    那么它就无法找到并返回undefined
+                    // 通过 name 获取 symbol
+                    let sym = Symbol.for("name");
+                    let sym2 = Symbol.for("id");
+
+                    // 通过 symbol 获取 name
+                    alert( Symbol.keyFor(sym) ); // name
+                    alert( Symbol.keyFor(sym2) ); // id
+
+
+                    let globalSymbol = Symbol.for("name");
+                    let localSymbol = Symbol("name");
+
+                    alert( Symbol.keyFor(globalSymbol) ); // name，全局 symbol
+                    alert( Symbol.keyFor(localSymbol) ); // undefined，非全局
+
+                    alert( localSymbol.description ); // name
+
+        */
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>对象方法，this</title>
+</head>
+<body>
+    
+    <script>
+        /*
+            对象的方法
+
+            const user = {
+                sayHi:()=>{
+                    console.log('Hello');
+
+                }
+            }
+        
+            方法中的this
+            let user = {
+                name:'Join',
+                age:30,
+                sayHi:()=>{
+                    console.log(this.name);
+                }
+            }
+            console.log(user.sayHi())//Join
+
+
+            this 不受限制
+
+            function sayHi(){
+                console.log(this.name) 
+            }
+
+            this的值是在代码运行时计算出来的 ，他取决于代码执行上下文
+
+
+            箭头函数没有自己的this
+            他的this取决于外部正常的函数
+                let user = {
+                firstName: "Ilya",
+                sayHi() {
+                    let arrow = () => alert(this.firstName);
+                    arrow();
+                }
+                };
+
+                user.sayHi(); // Ilya
+
+        */
+
+    </script>
+</body>
+</html>

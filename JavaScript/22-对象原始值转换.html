@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>对象原始值转换</title>
+</head>
+<body>
+    <script>
+
+        /*
+            JavaScript不允许自定义运算符对对象的处理方式。与其他一些编程语言不同，我们无法实现特殊的对象处理方法来处理加法
+            （或其他的运算）
+            在此类运算的情况下，对象会被自动转换为原始值，然后对这些原始值进行运算
+            并得到一运算结果(也是一个原始值)
+            这是一个重要限制：因为obj1+obj2的结果不能是另一个对象
+
+            目的：
+                1.如果遇到类似于对对象进行数学运算的编程错误时，能够更加理解到底发生了什么
+
+                2.有些操作是可行的，例如日期相减或比较
+
+            类型转换规则
+            1.没有转换为布尔值。所有对象在布尔上下文中均未true，就这么简单。只有字符串和数字转换
+            2.数字转换发生在对象相减或应用数学函数时。例如，Date对象可以相减，date1 - date2的结果是
+            两个日期之间的差值
+            3.字符串转换--通常发生在我们想alert(obj) 这样输出一个对象和类似的上下文中。
+
+            hint
+            类型转换在各种情况下有三种变体。他们被称为‘hint’，在规范里所述：
+        */
+    </script>
+</body>
+</html>

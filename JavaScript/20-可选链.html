@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>可选链 ?.</title>
+</head>
+<body>
+    <script>
+        /*
+            ?.
+            当你不确定这个属性可不可以访问的时候 可以添加?.的方式去访问
+            1.不要过度使用
+            2.?.前的变量必须是已声明的
+
+            短路效应
+                let user =null;
+                let x = 0;
+                user?.sayHi( x++ ); //没有运算
+                alert(x) //x 0
+        
+            其他变体：?.() , ?.[]
+
+            ?.()
+            let userAdmin = {
+                admin() {
+                    alert("I am admin");
+                }
+                };
+
+                let userGuest = {};
+
+                userAdmin.admin?.(); // I am admin
+
+                userGuest.admin?.(); // 啥都没发生（没有这样的方法）
+
+            ?.[]
+            let key = 'name';
+            const user = {
+
+            }
+            user.[key]
+
+            也可以用在delete
+
+            delete user?.name;
+
+            不能使用user?.name = '1'
+            不能用来赋值
+            
+        */
+    </script>
+</body>
+</html>
