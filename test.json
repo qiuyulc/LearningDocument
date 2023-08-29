@@ -1,0 +1,4101 @@
+{
+  "name": "拂晓蓝",
+  "key": "daybreakBlue",
+  "colors": [
+    "#e6f7ff",
+    "#bae7ff",
+    "#91d5ff",
+    "#69c0ff",
+    "#40a9ff",
+    "#1890ff",
+    "#096dd9",
+    "#0050b3"
+  ],
+  "config": [
+    {
+      "type": "lineChart",
+      "subType": "basic",
+      "version": "0.0.1",
+      "config": {
+        "global": {
+          "colors": [
+            "#e6f7ff",
+            "#bae7ff",
+            "#91d5ff",
+            "#69c0ff",
+            "#40a9ff",
+            "#1890ff",
+            "#096dd9",
+            "#0050b3"
+          ],
+          "background": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": ""
+          }
+        },
+        "tooltip": {
+          "axisPointer": {
+            "type": "line"
+          },
+          "backgroundColor": "rgba(179, 179, 179, 1)",
+          "borderColor": "rgba(77, 77, 77, 1)",
+          "borderRadius": 4,
+          "borderWidth": 0,
+          "formatter": "",
+          "show": false,
+          "textStyle": { "color": "#fff", "fontSize": 14 },
+          "trigger": "axis"
+        },
+        "legend": {
+          "show": true,
+          "borderRadius": 10,
+          "textStyle": {
+            "fontSize": 14,
+            "fontFamily": "PingFang SC",
+            "color": "#ffffff"
+          },
+          "position": {
+            "top": "auto",
+            "bottom": "auto",
+            "left": "auto",
+            "right": "auto"
+          },
+          "orient": "horizontal",
+          "icon": ""
+        },
+        "series": [
+          {
+            "type": "xAxis",
+            "show": true,
+            "position": "bottom",
+            "inverse": false,
+            "axisTick": {
+              "show": false
+            },
+            "boundaryGap": false,
+            "line": {
+              "show": true,
+              "lineStyle": {
+                "thinkness": 2,
+                "color": "#ffffff",
+                "opacity": 1,
+                "type": "solid"
+              }
+            },
+            "label": {
+              "show": true,
+              "inside": false,
+              "angle": 0,
+              "interval": false,
+              "textStyle": {
+                "fontSize": 18,
+                "fontFamily": "PingFang SC",
+                "color": "#aaaaaa"
+              }
+            },
+            "splitLine": {
+              "show": false,
+              "lineStyle": {
+                "width": 1,
+                "color": "#FDB75B",
+                "type": "dashed"
+              }
+            },
+            "name": {
+              "show": false,
+              "position": "",
+              "content": "",
+              "textStyle": {
+                "fontSize": 14,
+                "color": "#fff"
+              }
+            }
+          },
+          {
+            "type": "yAxis",
+            "show": true,
+            "position": "left",
+            "axisTick": {
+              "show": false
+            },
+            "boundaryGap": false,
+            "line": {
+              "show": true,
+              "lineStyle": {
+                "thinkness": 2,
+                "color": "#ffffff",
+                "opacity": 1,
+                "type": "solid"
+              }
+            },
+            "label": {
+              "show": true,
+              "inside": false,
+              "angle": 0,
+              "interval": false,
+              "textStyle": {
+                "fontSize": 18,
+                "color": "#aaaaaa"
+              }
+            },
+            "splitLine": {
+              "show": true,
+              "lineStyle": {
+                "width": 1,
+                "color": "#464646",
+                "opacity": 1,
+                "type": "solid"
+              }
+            },
+            "name": {
+              "show": false,
+              "position": "",
+              "content": "",
+              "textStyle": {
+                "fontSize": 14,
+                "color": "#fff"
+              }
+            }
+          },
+          {
+            "type": "lc_line",
+            "line": {
+              "thickness": 5,
+              "opacity": 1,
+              "type": "solid",
+              "color": ""
+            },
+            "area": {
+              "show": false,
+              "areaStyle": {
+                "shadowBlur": 0,
+                "shadowColor": "#FDB75B",
+                "opacity": 1,
+                "shadowOffsetX": 0,
+                "shadowOffsetY": 0
+              }
+            },
+            "smooth": false,
+            "yAxisIndex": 0,
+            "label": {
+              "show": false,
+              "position": "top",
+              "formatter": "c",
+              "textStyle": {
+                "color": "rgba(255, 255, 255, 1)",
+                "fontSize": 14
+              },
+              "prefix": {
+                "content": "",
+                "textStyle": {
+                  "fontSize": 14,
+                  "color": "rgba(255, 255, 255, 1)"
+                }
+              },
+              "suffix": {
+                "content": "",
+                "textStyle": {
+                  "fontSize": 14,
+                  "color": "rgba(255, 255, 255, 1)"
+                }
+              }
+            },
+            "symbol": {
+              "show": false,
+              "icon": "circle",
+              "symbolSize": 14,
+              "itemStyle": {
+                "color": "rgba(255, 255, 255, 1)",
+                "opacity": 1,
+                "borderColor": "rgba(255, 255, 255, 1)",
+                "borderWidth": 0,
+                "shadowColor": "rgba(255, 255, 255, 1)",
+                "shadowBlur": 0,
+                "shadowOffsetX": 0,
+                "shadowOffsetY": 0
+              }
+            }
+          }
+        ],
+        "grid": {
+          "left": 2,
+          "bottom": 2,
+          "right": 5,
+          "containLabel": true,
+          "show": true,
+          "top": 17,
+          "borderWidth": 0,
+          "borderColor": "gray",
+          "backgroundColor": "transparent"
+        },
+        "chartHead": {
+          "show": true,
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "height": 20,
+          "padding": {
+            "top": 5,
+            "right": 5,
+            "bottom": 5,
+            "left": 5
+          },
+          "itemGap": 5,
+          "subTitlePosition": "right",
+          "subTitleText": "",
+          "align": "left",
+          "title": {
+            "color": "#fff",
+            "fontSize": 24,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          },
+          "subTitle": {
+            "color": "darkgray",
+            "fontSize": 14,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          }
+        },
+        "chartBody": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "padding": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        }
+      }
+    },
+    {
+      "type": "lineChart",
+      "subType": "basic_area_line",
+      "version": "0.0.1",
+      "config": {
+        "global": {
+          "colors": [
+            "#e6f7ff",
+            "#bae7ff",
+            "#91d5ff",
+            "#69c0ff",
+            "#40a9ff",
+            "#1890ff",
+            "#096dd9",
+            "#0050b3"
+          ],
+          "background": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": ""
+          }
+        },
+        "tooltip": {
+          "axisPointer": {
+            "type": "line"
+          },
+          "backgroundColor": "rgba(179, 179, 179, 1)",
+          "borderColor": "rgba(77, 77, 77, 1)",
+          "borderRadius": 4,
+          "borderWidth": 0,
+          "formatter": "",
+          "show": false,
+          "textStyle": {
+            "color": "#fff",
+            "fontSize": 14
+          },
+          "trigger": "axis"
+        },
+        "legend": {
+          "show": true,
+          "borderRadius": 10,
+          "textStyle": {
+            "fontSize": 14,
+            "fontFamily": "PingFang SC",
+            "color": "#ffffff"
+          },
+          "position": {
+            "top": "auto",
+            "bottom": "auto",
+            "left": "auto",
+            "right": "auto"
+          },
+          "orient": "horizontal",
+          "icon": ""
+        },
+        "series": [
+          {
+            "type": "xAxis",
+            "show": true,
+            "position": "bottom",
+            "inverse": false,
+            "boundaryGap": false,
+            "line": {
+              "show": true,
+              "lineStyle": {
+                "thinkness": 2,
+                "color": "#ffffff",
+                "opacity": 1,
+                "type": "solid"
+              }
+            },
+            "label": {
+              "show": true,
+              "inside": false,
+              "angle": 0,
+              "interval": false,
+              "textStyle": {
+                "fontSize": 18,
+                "fontFamily": "PingFang SC",
+                "color": "#aaaaaa"
+              }
+            },
+            "splitLine": {
+              "show": false,
+              "lineStyle": {
+                "width": 1,
+                "color": "#FDB75B",
+                "type": "dashed"
+              }
+            },
+            "name": {
+              "show": false,
+              "position": "",
+              "content": "",
+              "textStyle": {
+                "fontSize": 14,
+                "color": "#fff"
+              }
+            }
+          },
+          {
+            "type": "yAxis",
+            "show": true,
+            "position": "left",
+            "boundaryGap": false,
+            "line": {
+              "show": true,
+              "lineStyle": {
+                "thinkness": 2,
+                "color": "#ffffff",
+                "opacity": 1,
+                "type": "solid"
+              }
+            },
+            "label": {
+              "show": true,
+              "inside": false,
+              "angle": 0,
+              "interval": false,
+              "textStyle": {
+                "fontSize": 18,
+                "color": "#aaaaaa"
+              }
+            },
+            "splitLine": {
+              "show": true,
+              "lineStyle": {
+                "width": 1,
+                "color": "#464646",
+                "opacity": 1,
+                "type": "solid"
+              }
+            },
+            "name": {
+              "show": false,
+              "position": "",
+              "content": "",
+              "textStyle": {
+                "fontSize": 14,
+                "color": "#fff"
+              }
+            }
+          },
+          {
+            "type": "lc_line",
+            "line": {
+              "thickness": 5,
+              "opacity": 1,
+              "type": "solid",
+              "color": ""
+            },
+            "area": {
+              "show": true,
+              "areaStyle": {
+                "shadowBlur": 0,
+                "shadowColor": "",
+                "opacity": 1,
+                "shadowOffsetX": 0,
+                "shadowOffsetY": 0
+              }
+            },
+            "smooth": false,
+            "yAxisIndex": 0,
+            "label": {
+              "show": false,
+              "position": "top",
+              "formatter": "c",
+              "textStyle": {
+                "color": "rgba(255, 255, 255, 1)",
+                "fontSize": 14
+              },
+              "prefix": {
+                "content": "",
+                "textStyle": {
+                  "fontSize": 14,
+                  "color": "rgba(255, 255, 255, 1)"
+                }
+              },
+              "suffix": {
+                "content": "",
+                "textStyle": {
+                  "fontSize": 14,
+                  "color": "rgba(255, 255, 255, 1)"
+                }
+              },
+              "symbol": {
+                "show": false,
+                "icon": "circle",
+                "symbolSize": 4,
+                "itemStyle": {
+                  "color": "",
+                  "opacity": 1,
+                  "borderColor": "rgba(255, 255, 255, 1)",
+                  "borderWidth": 0,
+                  "shadowColor": "",
+                  "shadowBlur": 0,
+                  "shadowOffsetX": 0,
+                  "shadowOffsetY": 0
+                }
+              }
+            }
+          }
+        ],
+        "grid": {
+          "left": 2,
+          "bottom": 2,
+          "right": 5,
+          "containLabel": true,
+          "show": true,
+          "top": 17,
+          "borderWidth": 0,
+          "borderColor": "gray",
+          "backgroundColor": "transparent"
+        },
+        "chartHead": {
+          "show": true,
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "height": 20,
+          "padding": {
+            "top": 5,
+            "right": 5,
+            "bottom": 5,
+            "left": 5
+          },
+          "itemGap": 5,
+          "subTitlePosition": "right",
+          "subTitleText": "",
+          "align": "left",
+          "title": {
+            "color": "#fff",
+            "fontSize": 24,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          },
+          "subTitle": {
+            "color": "darkgray",
+            "fontSize": 14,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          }
+        },
+        "chartBody": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "padding": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        }
+      }
+    },
+    {
+      "type": "lineChart",
+      "subType": "stack_area_line",
+      "version": "0.0.1",
+      "config": {
+        "global": {
+          "colors": [
+            "#e6f7ff",
+            "#bae7ff",
+            "#91d5ff",
+            "#69c0ff",
+            "#40a9ff",
+            "#1890ff",
+            "#096dd9",
+            "#0050b3"
+          ],
+          "stack": true,
+          "background": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": ""
+          }
+        },
+        "tooltip": {
+          "axisPointer": {
+            "type": "line"
+          },
+          "backgroundColor": "rgba(179, 179, 179, 1)",
+          "borderColor": "rgba(77, 77, 77, 1)",
+          "borderRadius": 4,
+          "borderWidth": 0,
+          "formatter": "",
+          "show": false,
+          "textStyle": {
+            "color": "#fff",
+            "fontSize": 14
+          },
+          "trigger": "axis"
+        },
+        "legend": {
+          "show": true,
+          "borderRadius": 10,
+          "textStyle": {
+            "fontSize": 14,
+            "fontFamily": "PingFang SC",
+            "color": "#ffffff"
+          },
+          "position": {
+            "top": "auto",
+            "bottom": "auto",
+            "left": "auto",
+            "right": "auto"
+          },
+          "orient": "horizontal",
+          "icon": ""
+        },
+        "series": [
+          {
+            "type": "xAxis",
+            "show": true,
+            "position": "bottom",
+            "inverse": false,
+            "boundaryGap": false,
+            "line": {
+              "show": true,
+              "lineStyle": {
+                "thinkness": 2,
+                "color": "#ffffff",
+                "opacity": 1,
+                "type": "solid"
+              }
+            },
+            "label": {
+              "show": true,
+              "inside": false,
+              "angle": 0,
+              "interval": false,
+              "textStyle": {
+                "fontSize": 18,
+                "fontFamily": "PingFang SC",
+                "color": "#aaaaaa"
+              }
+            },
+            "splitLine": {
+              "show": false,
+              "lineStyle": {
+                "width": 1,
+                "color": "#FDB75B",
+                "type": "dashed"
+              }
+            },
+            "name": {
+              "show": false,
+              "position": "",
+              "content": "",
+              "textStyle": {
+                "fontSize": 14,
+                "color": "#fff"
+              }
+            }
+          },
+          {
+            "type": "yAxis",
+            "show": true,
+            "position": "left",
+            "boundaryGap": false,
+            "line": {
+              "show": true,
+              "lineStyle": {
+                "thinkness": 2,
+                "color": "#ffffff",
+                "opacity": 1,
+                "type": "solid"
+              }
+            },
+            "label": {
+              "show": true,
+              "inside": false,
+              "angle": 0,
+              "interval": false,
+              "textStyle": {
+                "fontSize": 18,
+                "color": "#aaaaaa"
+              }
+            },
+            "splitLine": {
+              "show": true,
+              "lineStyle": {
+                "width": 1,
+                "color": "#464646",
+                "opacity": 1,
+                "type": "solid"
+              }
+            },
+            "name": {
+              "show": false,
+              "position": "",
+              "content": "",
+              "textStyle": {
+                "fontSize": 14,
+                "color": "#fff"
+              }
+            }
+          },
+          {
+            "type": "lc_line",
+            "line": {
+              "thickness": 5,
+              "opacity": 1,
+              "type": "solid",
+              "color": ""
+            },
+            "area": {
+              "show": true,
+              "areaStyle": {
+                "shadowBlur": 0,
+                "shadowColor": "",
+                "opacity": 1,
+                "shadowOffsetX": 0,
+                "shadowOffsetY": 0
+              }
+            },
+            "smooth": false,
+            "yAxisIndex": 0,
+            "label": {
+              "show": false,
+              "position": "top",
+              "formatter": "c",
+              "textStyle": {
+                "color": "rgba(255, 255, 255, 1)",
+                "fontSize": 14
+              },
+              "prefix": {
+                "content": "",
+                "textStyle": {
+                  "fontSize": 14,
+                  "color": "rgba(255, 255, 255, 1)"
+                }
+              },
+              "suffix": {
+                "content": "",
+                "textStyle": {
+                  "fontSize": 14,
+                  "color": "rgba(255, 255, 255, 1)"
+                }
+              },
+              "symbol": {
+                "show": false,
+                "icon": "circle",
+                "symbolSize": 4,
+                "itemStyle": {
+                  "color": "rgba(255, 255, 255, 1)",
+                  "opacity": 1,
+                  "borderColor": "rgba(255, 255, 255, 1)",
+                  "borderWidth": 0,
+                  "shadowColor": "",
+                  "shadowBlur": 0,
+                  "shadowOffsetX": 0,
+                  "shadowOffsetY": 0
+                }
+              }
+            }
+          }
+        ],
+        "grid": {
+          "left": 2,
+          "bottom": 2,
+          "right": 5,
+          "containLabel": true,
+          "show": true,
+          "top": 17,
+          "borderWidth": 0,
+          "borderColor": "gray",
+          "backgroundColor": "transparent"
+        },
+        "chartHead": {
+          "show": true,
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "height": 20,
+          "padding": {
+            "top": 5,
+            "right": 5,
+            "bottom": 5,
+            "left": 5
+          },
+          "itemGap": 5,
+          "subTitlePosition": "right",
+          "subTitleText": "",
+          "align": "left",
+          "title": {
+            "color": "#fff",
+            "fontSize": 24,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          },
+          "subTitle": {
+            "color": "darkgray",
+            "fontSize": 14,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          }
+        },
+        "chartBody": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "padding": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        }
+      }
+    },
+    {
+      "type": "barChart",
+      "subType": "pictorial_bar",
+      "version": "0.0.1",
+      "config": {
+        "global": {
+          "colors": [
+            "#e6f7ff",
+            "#bae7ff",
+            "#91d5ff",
+            "#69c0ff",
+            "#40a9ff",
+            "#1890ff",
+            "#096dd9",
+            "#0050b3"
+          ],
+          "background": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": ""
+          }
+        },
+        "grid": {
+          "left": 2,
+          "bottom": 2,
+          "right": 5,
+          "containLabel": true,
+          "show": true,
+          "top": 17,
+          "borderWidth": 0,
+          "borderColor": "gray",
+          "backgroundColor": "transparent"
+        },
+        "chartHead": {
+          "show": true,
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "height": 20,
+          "padding": {
+            "top": 5,
+            "right": 5,
+            "bottom": 5,
+            "left": 5
+          },
+          "itemGap": 5,
+          "subTitlePosition": "right",
+          "subTitleText": "",
+          "align": "left",
+          "title": {
+            "color": "#fff",
+            "fontSize": 24,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          },
+          "subTitle": {
+            "color": "darkgray",
+            "fontSize": 14,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          }
+        },
+        "chartBody": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "padding": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        }
+      }
+    },
+    {
+      "type": "barChart",
+      "subType": "basic",
+      "version": "0.0.1",
+      "config": {
+        "global": {
+          "colors": [
+            "#e6f7ff",
+            "#bae7ff",
+            "#91d5ff",
+            "#69c0ff",
+            "#40a9ff",
+            "#1890ff",
+            "#096dd9",
+            "#0050b3"
+          ],
+          "background": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": ""
+          }
+        },
+        "legend": {
+          "show": true,
+          "borderRadius": 10,
+          "textStyle": {
+            "fontSize": 14,
+            "fontFamily": "PingFang SC",
+            "color": "#ffffff"
+          },
+          "position": {
+            "top": "auto",
+            "bottom": "auto",
+            "left": "auto",
+            "right": "auto"
+          },
+          "orient": "horizontal",
+          "icon": ""
+        },
+        "series": [
+          {
+            "type": "xAxis",
+            "show": true,
+            "position": "bottom",
+            "inverse": false,
+            "line": {
+              "show": true,
+              "lineStyle": {
+                "thinkness": 2,
+                "color": "#ffffff",
+                "opacity": 1,
+                "type": "solid"
+              }
+            },
+            "label": {
+              "show": true,
+              "inside": false,
+              "angle": 0,
+              "interval": false,
+              "textStyle": {
+                "fontSize": 18,
+                "fontFamily": "PingFang SC",
+                "color": "#aaaaaa"
+              }
+            },
+            "splitLine": {
+              "show": false,
+              "lineStyle": {
+                "width": 1,
+                "color": "#FDB75B",
+                "type": "dashed"
+              }
+            },
+            "name": {
+              "show": false,
+              "position": "",
+              "content": "",
+              "textStyle": {
+                "fontSize": 14,
+                "color": "#fff"
+              }
+            }
+          },
+          {
+            "type": "yAxis",
+            "show": true,
+            "position": "left",
+            "line": {
+              "show": true,
+              "lineStyle": {
+                "thinkness": 2,
+                "color": "#ffffff",
+                "opacity": 1,
+                "type": "solid"
+              }
+            },
+            "label": {
+              "show": true,
+              "inside": false,
+              "angle": 0,
+              "interval": false,
+              "textStyle": {
+                "fontSize": 18,
+                "color": "#aaaaaa"
+              }
+            },
+            "splitLine": {
+              "show": true,
+              "lineStyle": {
+                "width": 1,
+                "color": "#464646",
+                "opacity": 1,
+                "type": "solid"
+              }
+            },
+            "name": {
+              "show": false,
+              "position": "",
+              "content": "",
+              "textStyle": {
+                "fontSize": 14,
+                "color": "#fff"
+              }
+            }
+          },
+          {
+            "type": "bc_bar",
+            "width": 40,
+            "barGap": 40,
+            "yAxisIndex": 0,
+            "label": {
+              "show": true,
+              "content": "c",
+              "position": "top",
+              "formatter": "c",
+              "textStyle": {
+                "fontSize": 14,
+                "color": "#ffffff"
+              }
+            },
+            "itemStyle": {
+              "shadowBlur": "0",
+              "shadowColor": "",
+              "opacity": 1,
+              "color": "",
+              "borderWidth": 0,
+              "borderRadius": 0,
+              "shadowOffsetX": 0,
+              "shadowOffsetY": 0
+            },
+            "symbol": {
+              "symbol": "0",
+              "symbolSize": 0,
+              "symbolPosition": "top",
+              "symbolRepeat": false
+            }
+          }
+        ],
+        "grid": {
+          "left": 2,
+          "bottom": 2,
+          "right": 5,
+          "containLabel": true,
+          "show": true,
+          "top": 17,
+          "borderWidth": 0,
+          "borderColor": "gray",
+          "backgroundColor": "transparent"
+        },
+        "chartHead": {
+          "show": true,
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "height": 20,
+          "padding": {
+            "top": 5,
+            "right": 5,
+            "bottom": 5,
+            "left": 5
+          },
+          "itemGap": 5,
+          "subTitlePosition": "right",
+          "subTitleText": "",
+          "align": "left",
+          "title": {
+            "color": "#fff",
+            "fontSize": 24,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          },
+          "subTitle": {
+            "color": "darkgray",
+            "fontSize": 14,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          }
+        },
+        "chartBody": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "padding": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        }
+      }
+    },
+    {
+      "type": "barChart",
+      "subType": "stack_bar",
+      "version": "0.0.1",
+      "config": {
+        "global": {
+          "colors": [
+            "#e6f7ff",
+            "#bae7ff",
+            "#91d5ff",
+            "#69c0ff",
+            "#40a9ff",
+            "#1890ff",
+            "#096dd9",
+            "#0050b3"
+          ],
+          "stack": true,
+          "background": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": ""
+          }
+        },
+        "legend": {
+          "show": true,
+          "borderRadius": 10,
+          "textStyle": {
+            "fontSize": 14,
+            "fontFamily": "PingFang SC",
+            "color": "#ffffff"
+          },
+          "position": {
+            "top": "auto",
+            "bottom": "auto",
+            "left": "auto",
+            "right": "auto"
+          },
+          "orient": "horizontal",
+          "icon": ""
+        },
+        "series": [
+          {
+            "type": "xAxis",
+            "show": true,
+            "position": "bottom",
+            "inverse": false,
+            "line": {
+              "show": true,
+              "lineStyle": {
+                "thinkness": 2,
+                "color": "#ffffff",
+                "opacity": 1,
+                "type": "solid"
+              }
+            },
+            "label": {
+              "show": true,
+              "inside": false,
+              "angle": 0,
+              "interval": false,
+              "textStyle": {
+                "fontSize": 18,
+                "fontFamily": "PingFang SC",
+                "color": "#aaaaaa"
+              }
+            },
+            "splitLine": {
+              "show": false,
+              "lineStyle": {
+                "width": 1,
+                "color": "#FDB75B",
+                "type": "dashed"
+              }
+            },
+            "name": {
+              "show": false,
+              "position": "",
+              "content": "",
+              "textStyle": {
+                "fontSize": 14,
+                "color": "#fff"
+              }
+            }
+          },
+          {
+            "type": "yAxis",
+            "show": true,
+            "position": "left",
+            "line": {
+              "show": true,
+              "lineStyle": {
+                "thinkness": 2,
+                "color": "#ffffff",
+                "opacity": 1,
+                "type": "solid"
+              }
+            },
+            "label": {
+              "show": true,
+              "inside": false,
+              "angle": 0,
+              "interval": false,
+              "textStyle": {
+                "fontSize": 18,
+                "color": "#aaaaaa"
+              }
+            },
+            "splitLine": {
+              "show": true,
+              "lineStyle": {
+                "width": 1,
+                "color": "#464646",
+                "opacity": 1,
+                "type": "solid"
+              }
+            },
+            "name": {
+              "show": false,
+              "position": "",
+              "content": "",
+              "textStyle": {
+                "fontSize": 14,
+                "color": "#fff"
+              }
+            }
+          },
+          {
+            "type": "bc_bar",
+            "width": 40,
+            "barGap": 40,
+            "yAxisIndex": 0,
+            "label": {
+              "show": true,
+              "content": "c",
+              "position": "top",
+              "formatter": "c",
+              "textStyle": {
+                "fontSize": 14,
+                "color": "#ffffff"
+              }
+            },
+            "itemStyle": {
+              "shadowBlur": "0",
+              "shadowColor": "",
+              "opacity": 1,
+              "color": "",
+              "borderWidth": 0,
+              "borderRadius": 0,
+              "shadowOffsetX": 0,
+              "shadowOffsetY": 0
+            },
+            "symbol": {
+              "symbol": "0",
+              "symbolSize": 0,
+              "symbolPosition": "top",
+              "symbolRepeat": false
+            }
+          }
+        ],
+        "grid": {
+          "left": 2,
+          "bottom": 2,
+          "right": 5,
+          "containLabel": true,
+          "show": true,
+          "top": 17,
+          "borderWidth": 0,
+          "borderColor": "gray",
+          "backgroundColor": "transparent"
+        },
+        "chartHead": {
+          "show": true,
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "height": 20,
+          "padding": {
+            "top": 5,
+            "right": 5,
+            "bottom": 5,
+            "left": 5
+          },
+          "itemGap": 5,
+          "subTitlePosition": "right",
+          "subTitleText": "",
+          "align": "left",
+          "title": {
+            "color": "#fff",
+            "fontSize": 24,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          },
+          "subTitle": {
+            "color": "darkgray",
+            "fontSize": 14,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          }
+        },
+        "chartBody": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "padding": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        }
+      }
+    },
+    {
+      "type": "barChart",
+      "subType": "line_bar",
+      "version": "0.0.1",
+      "config": {
+        "global": {
+          "colors": [
+            "#e6f7ff",
+            "#bae7ff",
+            "#91d5ff",
+            "#69c0ff",
+            "#40a9ff",
+            "#1890ff",
+            "#096dd9",
+            "#0050b3"
+          ],
+          "background": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": ""
+          }
+        },
+        "legend": {
+          "show": true,
+          "borderRadius": 10,
+          "textStyle": {
+            "fontSize": 14,
+            "fontFamily": "PingFang SC",
+            "color": "#ffffff"
+          },
+          "position": {
+            "top": "auto",
+            "bottom": "auto",
+            "left": "auto",
+            "right": "auto"
+          },
+          "orient": "horizontal",
+          "icon": ""
+        },
+        "grid": {
+          "left": 2,
+          "bottom": 2,
+          "right": 5,
+          "containLabel": true,
+          "show": true,
+          "top": 17,
+          "borderWidth": 0,
+          "borderColor": "gray",
+          "backgroundColor": "transparent"
+        },
+        "series": [
+          {
+            "type": "xAxis",
+            "show": true,
+            "position": "bottom",
+            "inverse": false,
+            "line": {
+              "show": true,
+              "lineStyle": {
+                "thinkness": 2,
+                "color": "#ffffff",
+                "opacity": 1,
+                "type": "solid"
+              }
+            },
+            "label": {
+              "show": true,
+              "inside": false,
+              "angle": 0,
+              "interval": false,
+              "textStyle": {
+                "fontSize": 18,
+                "fontFamily": "PingFang SC",
+                "color": "#aaaaaa"
+              }
+            },
+            "splitLine": {
+              "show": false,
+              "lineStyle": {
+                "width": 1,
+                "color": "#FDB75B",
+                "type": "dashed"
+              }
+            },
+            "name": {
+              "show": false,
+              "position": "",
+              "content": "",
+              "textStyle": {
+                "fontSize": 14,
+                "color": "#fff"
+              }
+            }
+          },
+          {
+            "type": "yAxis",
+            "show": true,
+            "position": "left",
+            "line": {
+              "show": true,
+              "lineStyle": {
+                "thinkness": 2,
+                "color": "#ffffff",
+                "opacity": 1,
+                "type": "solid"
+              }
+            },
+            "label": {
+              "show": true,
+              "inside": false,
+              "angle": 0,
+              "interval": false,
+              "textStyle": {
+                "fontSize": 18,
+                "color": "#aaaaaa"
+              }
+            },
+            "splitLine": {
+              "show": true,
+              "lineStyle": {
+                "width": 1,
+                "color": "#464646",
+                "opacity": 1,
+                "type": "solid"
+              }
+            },
+            "name": {
+              "show": false,
+              "position": "",
+              "content": "",
+              "textStyle": {
+                "fontSize": 14,
+                "color": "#fff"
+              }
+            }
+          },
+          {
+            "type": "bc_bar",
+            "width": 40,
+            "barGap": 40,
+            "yAxisIndex": 0,
+            "label": {
+              "show": true,
+              "content": "c",
+              "position": "top",
+              "formatter": "c",
+              "textStyle": {
+                "fontSize": 14,
+                "color": "#ffffff"
+              }
+            },
+            "itemStyle": {
+              "shadowBlur": "0",
+              "shadowColor": "",
+              "opacity": 1,
+              "color": "",
+              "borderWidth": 0,
+              "borderRadius": 0,
+              "shadowOffsetX": 0,
+              "shadowOffsetY": 0
+            },
+            "symbol": {
+              "symbol": "0",
+              "symbolSize": 0,
+              "symbolPosition": "top",
+              "symbolRepeat": false
+            }
+          },
+          {
+            "type": "lc_line",
+            "line": {
+              "thickness": 5,
+              "opacity": 1,
+              "type": "solid",
+              "color": ""
+            },
+            "area": {
+              "show": false,
+              "areaStyle": {
+                "shadowBlur": 0,
+                "shadowColor": "",
+                "opacity": 1,
+                "shadowOffsetX": 0,
+                "shadowOffsetY": 0
+              }
+            },
+            "smooth": false,
+            "yAxisIndex": 0,
+            "label": {
+              "show": false,
+              "position": "top",
+              "formatter": "c",
+              "textStyle": {
+                "color": "rgba(255, 255, 255, 1)",
+                "fontSize": 14
+              },
+              "prefix": {
+                "content": "",
+                "textStyle": {
+                  "fontSize": 14,
+                  "color": "rgba(255, 255, 255, 1)"
+                }
+              },
+              "suffix": {
+                "content": "",
+                "textStyle": {
+                  "fontSize": 14,
+                  "color": "rgba(255, 255, 255, 1)"
+                }
+              },
+              "symbol": {
+                "show": false,
+                "icon": "circle",
+                "symbolSize": 4,
+                "itemStyle": {
+                  "color": "rgba(255, 255, 255, 1)",
+                  "opacity": 1,
+                  "borderColor": "rgba(255, 255, 255, 1)",
+                  "borderWidth": 0,
+                  "shadowColor": "rgba(255, 255, 255, 1)",
+                  "shadowBlur": 0,
+                  "shadowOffsetX": 0,
+                  "shadowOffsetY": 0
+                }
+              }
+            }
+          }
+        ],
+        "chartHead": {
+          "show": true,
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "height": 20,
+          "padding": {
+            "top": 5,
+            "right": 5,
+            "bottom": 5,
+            "left": 5
+          },
+          "itemGap": 5,
+          "subTitlePosition": "right",
+          "subTitleText": "",
+          "align": "left",
+          "title": {
+            "color": "#fff",
+            "fontSize": 24,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          },
+          "subTitle": {
+            "color": "darkgray",
+            "fontSize": 14,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          }
+        },
+        "chartBody": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "padding": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        }
+      }
+    },
+    {
+      "type": "stripChart",
+      "subType": "basic_strip_bar",
+      "version": "0.0.1",
+      "config": {
+        "global": {
+          "colors": [
+            "#e6f7ff",
+            "#bae7ff",
+            "#91d5ff",
+            "#69c0ff",
+            "#40a9ff",
+            "#1890ff",
+            "#096dd9",
+            "#0050b3"
+          ],
+          "background": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": ""
+          }
+        },
+        "legend": {
+          "show": true,
+          "borderRadius": 10,
+          "textStyle": {
+            "fontSize": 14,
+            "fontFamily": "PingFang SC",
+            "color": "#ffffff"
+          },
+          "position": {
+            "top": "auto",
+            "bottom": "auto",
+            "left": "auto",
+            "right": "auto"
+          },
+          "orient": "horizontal",
+          "icon": ""
+        },
+        "grid": {
+          "left": 2,
+          "bottom": 2,
+          "right": 5,
+          "containLabel": true,
+          "show": true,
+          "top": 17,
+          "borderWidth": 0,
+          "borderColor": "gray",
+          "backgroundColor": "transparent"
+        },
+        "series": [
+          {
+            "type": "xAxis",
+            "show": true,
+            "position": "bottom",
+            "inverse": false,
+            "line": {
+              "show": true,
+              "lineStyle": {
+                "thinkness": 2,
+                "color": "#ffffff",
+                "opacity": 1,
+                "type": "solid"
+              }
+            },
+            "label": {
+              "show": true,
+              "inside": false,
+              "angle": 0,
+              "interval": false,
+              "textStyle": {
+                "fontSize": 18,
+                "fontFamily": "PingFang SC",
+                "color": "#aaaaaa"
+              }
+            },
+            "splitLine": {
+              "show": false,
+              "lineStyle": {
+                "width": 1,
+                "color": "#FDB75B",
+                "type": "dashed"
+              }
+            },
+            "name": {
+              "show": false,
+              "position": "",
+              "content": "",
+              "textStyle": {
+                "fontSize": 14,
+                "color": "#fff"
+              }
+            }
+          },
+          {
+            "type": "yAxis",
+            "show": true,
+            "position": "left",
+            "line": {
+              "show": true,
+              "lineStyle": {
+                "thinkness": 2,
+                "color": "#ffffff",
+                "opacity": 1,
+                "type": "solid"
+              }
+            },
+            "label": {
+              "show": true,
+              "inside": false,
+              "angle": 0,
+              "interval": false,
+              "textStyle": {
+                "fontSize": 18,
+                "color": "#aaaaaa"
+              }
+            },
+            "splitLine": {
+              "show": true,
+              "lineStyle": {
+                "width": 1,
+                "color": "#464646",
+                "opacity": 1,
+                "type": "solid"
+              }
+            },
+            "name": {
+              "show": false,
+              "position": "",
+              "content": "",
+              "textStyle": {
+                "fontSize": 14,
+                "color": "#fff"
+              }
+            }
+          },
+          {
+            "type": "bc_bar",
+            "width": 40,
+            "barGap": 40,
+            "yAxisIndex": 0,
+            "label": {
+              "show": true,
+              "content": "c",
+              "position": "top",
+              "formatter": "c",
+              "textStyle": {
+                "fontSize": 14,
+                "color": "#ffffff"
+              }
+            },
+            "itemStyle": {
+              "shadowBlur": "0",
+              "shadowColor": "rgba(255, 255, 255, 0)",
+              "opacity": 1,
+              "color": "",
+              "borderWidth": 0,
+              "borderRadius": 0,
+              "shadowOffsetX": 0,
+              "shadowOffsetY": 0
+            },
+            "symbol": {
+              "symbol": "0",
+              "symbolSize": 0,
+              "symbolPosition": "top",
+              "symbolRepeat": false
+            }
+          }
+        ],
+        "chartHead": {
+          "show": true,
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "height": 20,
+          "padding": {
+            "top": 5,
+            "right": 5,
+            "bottom": 5,
+            "left": 5
+          },
+          "itemGap": 5,
+          "subTitlePosition": "right",
+          "subTitleText": "",
+          "align": "left",
+          "title": {
+            "color": "#fff",
+            "fontSize": 24,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          },
+          "subTitle": {
+            "color": "darkgray",
+            "fontSize": 14,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          }
+        },
+        "chartBody": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "padding": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        }
+      }
+    },
+    {
+      "type": "stripChart",
+      "subType": "stack_strip_bar",
+      "version": "0.0.1",
+      "config": {
+        "global": {
+          "colors": [
+            "#e6f7ff",
+            "#bae7ff",
+            "#91d5ff",
+            "#69c0ff",
+            "#40a9ff",
+            "#1890ff",
+            "#096dd9",
+            "#0050b3"
+          ],
+          "stack": true,
+          "background": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": ""
+          }
+        },
+        "legend": {
+          "show": true,
+          "borderRadius": 10,
+          "textStyle": {
+            "fontSize": 14,
+            "fontFamily": "PingFang SC",
+            "color": "#ffffff"
+          },
+          "position": {
+            "top": "auto",
+            "bottom": "auto",
+            "left": "auto",
+            "right": "auto"
+          },
+          "orient": "horizontal",
+          "icon": ""
+        },
+        "grid": {
+          "left": 2,
+          "bottom": 2,
+          "right": 5,
+          "containLabel": true,
+          "show": true,
+          "top": 17,
+          "borderWidth": 0,
+          "borderColor": "gray",
+          "backgroundColor": "transparent"
+        },
+        "series": [
+          {
+            "type": "xAxis",
+            "show": true,
+            "position": "bottom",
+            "inverse": false,
+            "line": {
+              "show": true,
+              "lineStyle": {
+                "thinkness": 2,
+                "color": "#ffffff",
+                "opacity": 1,
+                "type": "solid"
+              }
+            },
+            "label": {
+              "show": true,
+              "inside": false,
+              "angle": 0,
+              "interval": false,
+              "textStyle": {
+                "fontSize": 18,
+                "fontFamily": "PingFang SC",
+                "color": "#aaaaaa"
+              }
+            },
+            "splitLine": {
+              "show": false,
+              "lineStyle": {
+                "width": 1,
+                "color": "#FDB75B",
+                "type": "dashed"
+              }
+            },
+            "name": {
+              "show": false,
+              "position": "",
+              "content": "",
+              "textStyle": {
+                "fontSize": 14,
+                "color": "#fff"
+              }
+            }
+          },
+          {
+            "type": "yAxis",
+            "show": true,
+            "position": "left",
+            "line": {
+              "show": true,
+              "lineStyle": {
+                "thinkness": 2,
+                "color": "#ffffff",
+                "opacity": 1,
+                "type": "solid"
+              }
+            },
+            "label": {
+              "show": true,
+              "inside": false,
+              "angle": 0,
+              "interval": false,
+              "textStyle": {
+                "fontSize": 18,
+                "color": "#aaaaaa"
+              }
+            },
+            "splitLine": {
+              "show": true,
+              "lineStyle": {
+                "width": 1,
+                "color": "#464646",
+                "opacity": 1,
+                "type": "solid"
+              }
+            },
+            "name": {
+              "show": false,
+              "position": "",
+              "content": "",
+              "textStyle": {
+                "fontSize": 14,
+                "color": "#fff"
+              }
+            }
+          },
+          {
+            "type": "bc_bar",
+            "width": 40,
+            "barGap": 40,
+            "yAxisIndex": 0,
+            "label": {
+              "show": true,
+              "content": "c",
+              "position": "top",
+              "formatter": "c",
+              "textStyle": {
+                "fontSize": 14,
+                "color": "#ffffff"
+              }
+            },
+            "itemStyle": {
+              "shadowBlur": "0",
+              "shadowColor": "rgba(255, 255, 255, 0)",
+              "opacity": 1,
+              "color": "",
+              "borderWidth": 0,
+              "borderRadius": 0,
+              "shadowOffsetX": 0,
+              "shadowOffsetY": 0
+            },
+            "symbol": {
+              "symbol": "0",
+              "symbolSize": 0,
+              "symbolPosition": "top",
+              "symbolRepeat": false
+            }
+          }
+        ],
+        "chartHead": {
+          "show": true,
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "height": 20,
+          "padding": {
+            "top": 5,
+            "right": 5,
+            "bottom": 5,
+            "left": 5
+          },
+          "itemGap": 5,
+          "subTitlePosition": "right",
+          "subTitleText": "",
+          "align": "left",
+          "title": {
+            "color": "#fff",
+            "fontSize": 24,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          },
+          "subTitle": {
+            "color": "darkgray",
+            "fontSize": 14,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          }
+        },
+        "chartBody": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "padding": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        }
+      }
+    },
+    {
+      "type": "stripChart",
+      "subType": "mirror_strip_bar",
+      "version": "0.0.1",
+      "config": {
+        "global": {
+          "colors": [
+            "#e6f7ff",
+            "#bae7ff",
+            "#91d5ff",
+            "#69c0ff",
+            "#40a9ff",
+            "#1890ff",
+            "#096dd9",
+            "#0050b3"
+          ],
+          "stack": true,
+          "background": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": ""
+          }
+        },
+        "legend": {
+          "show": true,
+          "borderRadius": 10,
+          "textStyle": {
+            "fontSize": 14,
+            "fontFamily": "PingFang SC",
+            "color": "#ffffff"
+          },
+          "position": {
+            "top": "auto",
+            "bottom": "auto",
+            "left": "auto",
+            "right": "auto"
+          },
+          "orient": "horizontal",
+          "icon": ""
+        },
+        "grid": {
+          "left": 2,
+          "bottom": 2,
+          "right": 5,
+          "containLabel": true,
+          "show": true,
+          "top": 17,
+          "borderWidth": 0,
+          "borderColor": "gray",
+          "backgroundColor": "transparent"
+        },
+        "series": [
+          {
+            "type": "xAxis",
+            "show": true,
+            "position": "bottom",
+            "inverse": false,
+            "line": {
+              "show": true,
+              "lineStyle": {
+                "thinkness": 2,
+                "color": "#ffffff",
+                "opacity": 1,
+                "type": "solid"
+              }
+            },
+            "label": {
+              "show": true,
+              "inside": false,
+              "angle": 0,
+              "interval": false,
+              "textStyle": {
+                "fontSize": 18,
+                "fontFamily": "PingFang SC",
+                "color": "#aaaaaa"
+              }
+            },
+            "splitLine": {
+              "show": false,
+              "lineStyle": {
+                "width": 1,
+                "color": "#FDB75B",
+                "type": "dashed"
+              }
+            },
+            "name": {
+              "show": false,
+              "position": "",
+              "content": "",
+              "textStyle": {
+                "fontSize": 14,
+                "color": "#fff"
+              }
+            }
+          },
+          {
+            "type": "yAxis",
+            "show": true,
+            "position": "left",
+            "line": {
+              "show": true,
+              "lineStyle": {
+                "thinkness": 2,
+                "color": "#ffffff",
+                "opacity": 1,
+                "type": "solid"
+              }
+            },
+            "label": {
+              "show": true,
+              "inside": false,
+              "angle": 0,
+              "interval": false,
+              "textStyle": {
+                "fontSize": 18,
+                "color": "#aaaaaa"
+              }
+            },
+            "splitLine": {
+              "show": true,
+              "lineStyle": {
+                "width": 1,
+                "color": "#464646",
+                "opacity": 1,
+                "type": "solid"
+              }
+            },
+            "name": {
+              "show": false,
+              "position": "",
+              "content": "",
+              "textStyle": {
+                "fontSize": 14,
+                "color": "#fff"
+              }
+            }
+          },
+          {
+            "type": "bc_bar",
+            "width": 40,
+            "barGap": 40,
+            "yAxisIndex": 0,
+            "label": {
+              "show": true,
+              "content": "c",
+              "position": "top",
+              "formatter": "c",
+              "textStyle": {
+                "fontSize": 14,
+                "color": "#ffffff"
+              }
+            },
+            "itemStyle": {
+              "shadowBlur": "0",
+              "shadowColor": "rgba(255, 255, 255, 0)",
+              "opacity": 1,
+              "color": "rgba(255, 255, 255, 1)",
+              "borderWidth": 0,
+              "borderRadius": 0,
+              "shadowOffsetX": 0,
+              "shadowOffsetY": 0
+            },
+            "symbol": {
+              "symbol": "0",
+              "symbolSize": 0,
+              "symbolPosition": "top",
+              "symbolRepeat": false
+            }
+          }
+        ],
+        "chartHead": {
+          "show": true,
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "height": 20,
+          "padding": {
+            "top": 5,
+            "right": 5,
+            "bottom": 5,
+            "left": 5
+          },
+          "itemGap": 5,
+          "subTitlePosition": "right",
+          "subTitleText": "",
+          "align": "left",
+          "title": {
+            "color": "#fff",
+            "fontSize": 24,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          },
+          "subTitle": {
+            "color": "darkgray",
+            "fontSize": 14,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          }
+        },
+        "chartBody": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "padding": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        }
+      }
+    },
+    {
+      "type": "stripChart",
+      "subType": "pictorial_bar",
+      "version": "0.0.1",
+      "config": {
+        "global": {
+          "colors": [
+            "#e6f7ff",
+            "#bae7ff",
+            "#91d5ff",
+            "#69c0ff",
+            "#40a9ff",
+            "#1890ff",
+            "#096dd9",
+            "#0050b3"
+          ],
+          "background": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": ""
+          }
+        },
+        "grid": {
+          "left": 2,
+          "bottom": 2,
+          "right": 5,
+          "containLabel": true,
+          "show": true,
+          "top": 17,
+          "borderWidth": 0,
+          "borderColor": "gray",
+          "backgroundColor": "transparent"
+        },
+        "chartHead": {
+          "show": true,
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "height": 20,
+          "padding": {
+            "top": 5,
+            "right": 5,
+            "bottom": 5,
+            "left": 5
+          },
+          "itemGap": 5,
+          "subTitlePosition": "right",
+          "subTitleText": "",
+          "align": "left",
+          "title": {
+            "color": "#fff",
+            "fontSize": 24,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          },
+          "subTitle": {
+            "color": "darkgray",
+            "fontSize": 14,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          }
+        },
+        "chartBody": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "padding": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        }
+      }
+    },
+    {
+      "type": "pieChart",
+      "subType": "basic",
+      "version": "0.0.1",
+      "config": {
+        "global": {
+          "colors": [
+            "#e6f7ff",
+            "#bae7ff",
+            "#91d5ff",
+            "#69c0ff",
+            "#40a9ff",
+            "#1890ff",
+            "#096dd9",
+            "#0050b3"
+          ],
+          "startAngle": 0,
+          "roseType": false,
+          "background": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": ""
+          }
+        },
+        "legend": {
+          "show": true,
+          "borderRadius": 10,
+          "textStyle": {
+            "fontSize": 14,
+            "fontFamily": "PingFang SC",
+            "color": "#ffffff"
+          },
+          "position": {
+            "top": "auto",
+            "bottom": "auto",
+            "left": "auto",
+            "right": "auto"
+          },
+          "orient": "horizontal",
+          "icon": ""
+        },
+        "arc": {
+          "innerRadius": 0,
+          "outerRadius": 70
+        },
+        "config": {
+          "center": {
+            "0": 50,
+            "1": 50
+          }
+        },
+        "series": [
+          {
+            "type": "pc_labelArray",
+            "label": {
+              "show": true,
+              "position": "outside",
+              "textStyle": {
+                "fontSize": 14,
+                "color": "rgba(255, 255, 255, 1)"
+              },
+              "formatter": "b"
+            },
+            "labelLine": {
+              "length": 0,
+              "length2": 0
+            }
+          }
+        ],
+        "chartHead": {
+          "show": true,
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "height": 20,
+          "padding": {
+            "top": 5,
+            "right": 5,
+            "bottom": 5,
+            "left": 5
+          },
+          "itemGap": 5,
+          "subTitlePosition": "right",
+          "subTitleText": "",
+          "align": "left",
+          "title": {
+            "color": "#fff",
+            "fontSize": 24,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          },
+          "subTitle": {
+            "color": "darkgray",
+            "fontSize": 14,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          }
+        },
+        "chartBody": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "padding": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        },
+        "grid": {
+          "left": 0,
+          "bottom": 0,
+          "right": 0,
+          "top": 0,
+          "borderWidth": 0,
+          "borderColor": "#ffffff",
+          "backgroundColor": "transparent"
+        }
+      }
+    },
+    {
+      "type": "pieChart",
+      "subType": "area",
+      "version": "0.0.1",
+      "config": {
+        "global": {
+          "colors": [
+            "#e6f7ff",
+            "#bae7ff",
+            "#91d5ff",
+            "#69c0ff",
+            "#40a9ff",
+            "#1890ff",
+            "#096dd9",
+            "#0050b3"
+          ],
+          "roseType": "area",
+          "background": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": ""
+          }
+        },
+        "legend": {
+          "show": true,
+          "borderRadius": 10,
+          "textStyle": {
+            "fontSize": 14,
+            "fontFamily": "PingFang SC",
+            "color": "#ffffff"
+          },
+          "position": {
+            "top": "auto",
+            "bottom": "auto",
+            "left": "auto",
+            "right": "auto"
+          },
+          "orient": "horizontal",
+          "icon": ""
+        },
+        "arc": {
+          "innerRadius": 55,
+          "outerRadius": 70
+        },
+        "config": {
+          "center": {
+            "0": 50,
+            "1": 50
+          }
+        },
+        "series": [
+          {
+            "type": "pc_labelArray",
+            "label": {
+              "show": true,
+              "position": "outside",
+              "textStyle": {
+                "fontSize": 14,
+                "color": "rgba(255, 255, 255, 1)"
+              },
+              "formatter": "b"
+            },
+            "labelLine": {
+              "length": 0,
+              "length2": 0
+            }
+          }
+        ],
+        "chartHead": {
+          "show": true,
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "height": 20,
+          "padding": {
+            "top": 5,
+            "right": 5,
+            "bottom": 5,
+            "left": 5
+          },
+          "itemGap": 5,
+          "subTitlePosition": "right",
+          "subTitleText": "",
+          "align": "left",
+          "title": {
+            "color": "#fff",
+            "fontSize": 24,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          },
+          "subTitle": {
+            "color": "darkgray",
+            "fontSize": 14,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          }
+        },
+        "chartBody": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "padding": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        },
+        "grid": {
+          "left": 0,
+          "bottom": 0,
+          "right": 0,
+          "top": 0,
+          "borderWidth": 0,
+          "borderColor": "#ffffff",
+          "backgroundColor": "transparent"
+        }
+      }
+    },
+    {
+      "type": "pieChart",
+      "subType": "radius",
+      "version": "0.0.1",
+      "config": {
+        "global": {
+          "colors": [
+            "#e6f7ff",
+            "#bae7ff",
+            "#91d5ff",
+            "#69c0ff",
+            "#40a9ff",
+            "#1890ff",
+            "#096dd9",
+            "#0050b3"
+          ],
+          "roseType": "radius",
+          "background": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": ""
+          }
+        },
+        "legend": {
+          "show": true,
+          "borderRadius": 10,
+          "textStyle": {
+            "fontSize": 14,
+            "fontFamily": "PingFang SC",
+            "color": "#ffffff"
+          },
+          "position": {
+            "top": "auto",
+            "bottom": "auto",
+            "left": "auto",
+            "right": "auto"
+          },
+          "orient": "horizontal",
+          "icon": ""
+        },
+        "arc": {
+          "innerRadius": 55,
+          "outerRadius": 70
+        },
+        "config": {
+          "center": {
+            "0": 50,
+            "1": 50
+          }
+        },
+        "series": [
+          {
+            "type": "pc_labelArray",
+            "label": {
+              "show": true,
+              "position": "outside",
+              "textStyle": {
+                "fontSize": 14,
+                "color": "rgba(255, 255, 255, 1)"
+              },
+              "formatter": "b"
+            },
+            "labelLine": {
+              "length": 0,
+              "length2": 0
+            }
+          }
+        ],
+        "chartHead": {
+          "show": true,
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "height": 20,
+          "padding": {
+            "top": 5,
+            "right": 5,
+            "bottom": 5,
+            "left": 5
+          },
+          "itemGap": 5,
+          "subTitlePosition": "right",
+          "subTitleText": "",
+          "align": "left",
+          "title": {
+            "color": "#fff",
+            "fontSize": 24,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          },
+          "subTitle": {
+            "color": "darkgray",
+            "fontSize": 14,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          }
+        },
+        "chartBody": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "padding": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        },
+        "grid": {
+          "left": 0,
+          "bottom": 0,
+          "right": 0,
+          "top": 0,
+          "borderWidth": 0,
+          "borderColor": "#ffffff",
+          "backgroundColor": "transparent"
+        }
+      }
+    },
+    {
+      "type": "gaugeChart",
+      "subType": "basic",
+      "version": "0.0.1",
+      "config": {
+        "global": {
+          "colors": [
+            "#e6f7ff",
+            "#bae7ff",
+            "#91d5ff",
+            "#69c0ff",
+            "#40a9ff",
+            "#1890ff",
+            "#096dd9",
+            "#0050b3"
+          ],
+          "radius": 156,
+          "width": "40",
+          "height": "18",
+          "background": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": ""
+          }
+        },
+        "split": {
+          "show": true,
+          "count": 1,
+          "length": 0,
+          "lineStyle": {
+            "thickness": 1,
+            "color": "",
+            "opacity": 1,
+            "dashes": "solid",
+            "width": 1,
+            "type": "solid"
+          }
+        },
+        "tick": {
+          "show": false,
+          "splitNumber": 5,
+          "length": 10,
+          "lineStyle": {
+            "thickness": 1,
+            "color": "rgba(255,255,255,0.5)",
+            "opacity": 1,
+            "dashes": "solid",
+            "width": 1,
+            "type": "solid"
+          }
+        },
+        "label": {
+          "show": true,
+          "textStyle": {
+            "fontSize": "14",
+            "color": "white"
+          },
+          "distance": 10
+        },
+        "point": {
+          "show": true,
+          "length": 70,
+          "width": 5
+        },
+        "line": {
+          "show": true,
+          "lineStyle": {
+            "width": 40,
+            "color": ["#ffffff", "#5284c4"],
+            "opacity": 1,
+            "type": "solid",
+            "number": 2,
+            "target_value": ""
+          }
+        },
+        "series": [
+          {
+            "type": "current",
+            "show": true,
+            "screen_show": false,
+            "position": "",
+            "prefix": {
+              "show": true,
+              "content": "",
+              "textStyle": {
+                "fontSize": 14,
+                "color": "white"
+              }
+            },
+            "value": {
+              "show": true,
+              "textStyle": {
+                "fontSize": 14,
+                "color": "white"
+              }
+            },
+            "suffix": {
+              "show": true,
+              "content": "",
+              "textStyle": {
+                "fontSize": 14,
+                "color": "white"
+              }
+            }
+          }
+        ],
+        "chartHead": {
+          "show": true,
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "height": 20,
+          "padding": {
+            "top": 5,
+            "right": 5,
+            "bottom": 5,
+            "left": 5
+          },
+          "itemGap": 5,
+          "subTitlePosition": "right",
+          "subTitleText": "",
+          "align": "left",
+          "title": {
+            "color": "#fff",
+            "fontSize": 24,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          },
+          "subTitle": {
+            "color": "darkgray",
+            "fontSize": 14,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          }
+        },
+        "chartBody": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "padding": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        }
+      }
+    },
+    {
+      "type": "gaugeChart",
+      "subType": "section",
+      "version": "0.0.1",
+      "config": {
+        "global": {
+          "colors": [
+            "#e6f7ff",
+            "#bae7ff",
+            "#91d5ff",
+            "#69c0ff",
+            "#40a9ff",
+            "#1890ff",
+            "#096dd9",
+            "#0050b3"
+          ],
+          "radius": 156,
+          "width": "40",
+          "height": "18",
+          "background": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": ""
+          }
+        },
+        "split": {
+          "show": true,
+          "count": 1,
+          "length": 0,
+          "lineStyle": {
+            "thickness": 1,
+            "color": "rgba(255,255,255,0)",
+            "opacity": 1,
+            "dashes": "solid",
+            "width": 1,
+            "type": "solid"
+          }
+        },
+        "tick": {
+          "show": false,
+          "splitNumber": 5,
+          "length": 10,
+          "lineStyle": {
+            "thickness": 1,
+            "color": "rgba(255,255,255,0.5)",
+            "opacity": 1,
+            "dashes": "solid",
+            "width": 1,
+            "type": "solid"
+          }
+        },
+        "label": {
+          "show": true,
+          "textStyle": {
+            "fontSize": "14",
+            "color": "#4c86d7"
+          },
+          "distance": 30
+        },
+        "point": {
+          "show": true,
+          "length": 70,
+          "width": 5
+        },
+        "line": {
+          "show": true,
+          "lineStyle": {
+            "width": 4,
+            "color": ["#53c8fd", "#53c8fd"],
+            "opacity": 1,
+            "type": "solid",
+            "number": 2,
+            "target_value": ""
+          }
+        },
+        "series": [
+          {
+            "type": "current",
+            "show": true,
+            "screen_show": false,
+            "position": "",
+            "prefix": {
+              "show": true,
+              "content": "",
+              "textStyle": {
+                "fontSize": 14,
+                "color": "#51c2f6"
+              }
+            },
+            "value": {
+              "show": true,
+              "textStyle": {
+                "fontSize": 14,
+                "color": "#53c8fd"
+              }
+            },
+            "suffix": {
+              "show": true,
+              "content": "",
+              "textStyle": {
+                "fontSize": 14,
+                "color": "#365e97"
+              }
+            }
+          }
+        ],
+        "chartHead": {
+          "show": true,
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "height": 20,
+          "padding": {
+            "top": 5,
+            "right": 5,
+            "bottom": 5,
+            "left": 5
+          },
+          "itemGap": 5,
+          "subTitlePosition": "right",
+          "subTitleText": "",
+          "align": "left",
+          "title": {
+            "color": "#fff",
+            "fontSize": 24,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          },
+          "subTitle": {
+            "color": "darkgray",
+            "fontSize": 14,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          }
+        },
+        "chartBody": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "padding": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        }
+      }
+    },
+    {
+      "type": "waveChart",
+      "subType": "basic",
+      "version": "0.0.1",
+      "config": {
+        "global": {
+          "colors": [
+            "#e6f7ff",
+            "#bae7ff",
+            "#91d5ff",
+            "#69c0ff",
+            "#40a9ff",
+            "#1890ff",
+            "#096dd9",
+            "#0050b3"
+          ],
+          "background": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": ""
+          }
+        },
+        "outline": {
+          "show": true,
+          "borderDistance": 10,
+          "itemStyle": {
+            "color": "none",
+            "borderColor": "#ffffff",
+            "borderWidth": 20,
+            "shadowBlur": 0,
+            "shadowColor": "rgba(255, 0, 0, 0)"
+          }
+        },
+        "background": {
+          "color": "#FDB75B",
+          "opacity": 0
+        },
+        "series": [
+          {
+            "type": "wc_value",
+            "itemStyle": {
+              "opacity": 1,
+              "shadowBlur": 0,
+              "shadowColor": "rgba(255, 255, 0, 0)",
+              "color": "rgba(76, 134, 215, 1)"
+            },
+            "detail": {
+              "show": true,
+              "value": {
+                "show": true,
+                "textStyle": {
+                  "fontSize": 40,
+                  "color": "#ffffff"
+                }
+              },
+              "suffix": {
+                "show": true,
+                "textStyle": {
+                  "fontSize": 28,
+                  "color": "#ffffff"
+                }
+              }
+            }
+          }
+        ],
+        "chartHead": {
+          "show": true,
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "height": 20,
+          "padding": {
+            "top": 5,
+            "right": 5,
+            "bottom": 5,
+            "left": 5
+          },
+          "itemGap": 5,
+          "subTitlePosition": "right",
+          "subTitleText": "",
+          "align": "left",
+          "title": {
+            "color": "#fff",
+            "fontSize": 24,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          },
+          "subTitle": {
+            "color": "darkgray",
+            "fontSize": 14,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          }
+        },
+        "chartBody": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "padding": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        }
+      }
+    },
+    {
+      "type": "valuePair",
+      "subType": "basic",
+      "version": "0.0.1",
+      "config": {
+        "global": {
+          "colors": [
+            "#e6f7ff",
+            "#bae7ff",
+            "#91d5ff",
+            "#69c0ff",
+            "#40a9ff",
+            "#1890ff",
+            "#096dd9",
+            "#0050b3"
+          ],
+          "multiline": true,
+          "background": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": ""
+          }
+        },
+        "series": [
+          {
+            "type": "vp_title",
+            "width": "100%",
+            "align": "flex-start",
+            "textStyle": {
+              "fontSize": 28,
+              "algin": "left",
+              "fontStyle": [],
+              "color": "#ffffff",
+              "background": "rgba(255, 255, 255, 0)"
+            }
+          },
+          {
+            "type": "vp_value",
+            "showReflect": true,
+            "textStyle": {
+              "fontSize": 48,
+              "color": "#ffffff"
+            },
+            "suffix": {
+              "content": "",
+              "textStyle": {
+                "fontSize": 28,
+                "color": "#ffffff",
+                "fontStyle": []
+              }
+            }
+          },
+          {
+            "type": "vp_ratio_value",
+            "ratioValue": {
+              "decimalCount": 2,
+              "showSymbol": false,
+              "symbolSize": 4,
+              "symbolColors": "rgba(255, 255, 255, 0)",
+              "textStyle": {
+                "fontSize": 14,
+                "color": "rgba(255, 255, 255, 1)"
+              },
+              "suffix": {
+                "show": false,
+                "content": "",
+                "color": "rgba(255, 255, 255, 1)",
+                "fontSize": 14,
+                "fontStyle": []
+              }
+            }
+          }
+        ],
+        "chartHead": {
+          "show": true,
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "height": 20,
+          "padding": {
+            "top": 5,
+            "right": 5,
+            "bottom": 5,
+            "left": 5
+          },
+          "itemGap": 5,
+          "subTitlePosition": "right",
+          "subTitleText": "",
+          "align": "left",
+          "title": {
+            "color": "#fff",
+            "fontSize": 24,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          },
+          "subTitle": {
+            "color": "darkgray",
+            "fontSize": 14,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          }
+        },
+        "chartBody": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "padding": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        }
+      }
+    },
+    {
+      "type": "valuePair",
+      "subType": "trend",
+      "version": "0.0.1",
+      "config": {
+        "global": {
+          "colors": [
+            "#e6f7ff",
+            "#bae7ff",
+            "#91d5ff",
+            "#69c0ff",
+            "#40a9ff",
+            "#1890ff",
+            "#096dd9",
+            "#0050b3"
+          ],
+          "multiline": true,
+          "background": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": ""
+          }
+        },
+        "series": [
+          {
+            "type": "vp_title",
+            "width": "100%",
+            "align": "flex-start",
+            "textStyle": {
+              "fontSize": 28,
+              "algin": "left",
+              "fontStyle": ["", ""],
+              "color": "#ffffff"
+            }
+          },
+          {
+            "type": "vp_value",
+            "showReflect": true,
+            "textStyle": {
+              "fontSize": 48,
+              "color": "#ffffff"
+            },
+            "suffix": {
+              "content": "",
+              "textStyle": {
+                "fontSize": 28,
+                "color": "#ffffff",
+                "fontStyle": []
+              }
+            }
+          },
+          {
+            "type": "vp_ratio_value",
+            "ratioValue": {
+              "decimalCount": 2,
+              "showSymbol": false,
+              "symbolSize": 4,
+              "symbolColors": "rgba(255, 255, 255, 0)",
+              "textStyle": {
+                "fontSize": 14,
+                "color": "rgba(255, 255, 255, 1)"
+              },
+              "suffix": {
+                "show": false,
+                "content": "",
+                "color": "rgba(255, 255, 255, 1)",
+                "fontSize": 14,
+                "fontStyle": []
+              }
+            }
+          }
+        ],
+        "chartHead": {
+          "show": true,
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "height": 20,
+          "padding": {
+            "top": 5,
+            "right": 5,
+            "bottom": 5,
+            "left": 5
+          },
+          "itemGap": 5,
+          "subTitlePosition": "right",
+          "subTitleText": "",
+          "align": "left",
+          "title": {
+            "color": "#fff",
+            "fontSize": 24,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          },
+          "subTitle": {
+            "color": "darkgray",
+            "fontSize": 14,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          }
+        },
+        "chartBody": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "padding": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        }
+      }
+    },
+    {
+      "type": "title",
+      "subType": "h1h2Title",
+      "version": "0.0.1",
+      "config": {
+        "global": {
+          "colors": [
+            "#e6f7ff",
+            "#bae7ff",
+            "#91d5ff",
+            "#69c0ff",
+            "#40a9ff",
+            "#1890ff",
+            "#096dd9",
+            "#0050b3"
+          ],
+          "background": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": ""
+          }
+        },
+        "series": [
+          {
+            "type": "h1Title",
+            "textStyle": {
+              "fontSize": 48,
+              "algin": "left",
+              "fontStyle": [],
+              "color": "rgba(255, 255, 255, 1)"
+            }
+          },
+          {
+            "type": "h2Title",
+            "textStyle": {
+              "fontSize": 48,
+              "algin": "left",
+              "fontStyle": [],
+              "color": "rgba(255, 255, 255, 1)"
+            }
+          }
+        ],
+        "chartHead": {
+          "show": true,
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "height": 20,
+          "padding": {
+            "top": 5,
+            "right": 5,
+            "bottom": 5,
+            "left": 5
+          },
+          "itemGap": 5,
+          "subTitlePosition": "right",
+          "subTitleText": "",
+          "align": "left",
+          "title": {
+            "color": "#fff",
+            "fontSize": 24,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          },
+          "subTitle": {
+            "color": "darkgray",
+            "fontSize": 14,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          }
+        },
+        "chartBody": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "padding": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        }
+      }
+    },
+    {
+      "type": "table",
+      "subType": "basic",
+      "version": "0.0.1",
+      "config": {
+        "global": {
+          "colors": [
+            "#e6f7ff",
+            "#bae7ff",
+            "#91d5ff",
+            "#69c0ff",
+            "#40a9ff",
+            "#1890ff",
+            "#096dd9",
+            "#0050b3"
+          ],
+          "rowCount": 4,
+          "animationDuration": 3,
+          "style": {
+            "borderWidth": 0,
+            "borderRadius": 8,
+            "borderColor": "#FDB75B",
+            "shadowBlur": "",
+            "shadowColor": "",
+            "shadowOffsetX": 0,
+            "shadowOffsetY": 0
+          },
+          "background": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": ""
+          }
+        },
+        "header": {
+          "show": true,
+          "height": 20,
+          "textStyle": {
+            "fontSize": 14,
+            "color": "#f8f8f8",
+            "fontStyle": ["bold"]
+          },
+          "style": {
+            "borderWidth": 0,
+            "borderRadius": 0,
+            "borderColor": "rgba(255, 255, 255, 1)",
+            "shadowBlur": 0,
+            "shadowColor": "rgba(255, 255, 255, 1)",
+            "shadowOffsetX": 0,
+            "shadowOffsetY": 0,
+            "backgroundColor": "rgba(255,255,255,0.2)"
+          }
+        },
+        "rowStyle": {
+          "backgroundColor1": "rgba(253, 183, 91, 0)",
+          "backgroundColor2": "rgba(253, 183, 91, 0)",
+          "borderWidth": 0,
+          "borderRadius": 0,
+          "borderColor": ""
+        },
+        "divider": {
+          "show": true,
+          "itemStyle": {
+            "color": "white",
+            "thinkness": 2
+          }
+        },
+        "series": [
+          {
+            "type": "column",
+            "width": 20,
+            "align": "center",
+            "textStyle": {
+              "fontSize": 24,
+              "color": "#f8f8f8",
+              "fontStyle": []
+            }
+          }
+        ],
+        "chartHead": {
+          "show": true,
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "height": 20,
+          "padding": {
+            "top": 5,
+            "right": 5,
+            "bottom": 5,
+            "left": 5
+          },
+          "itemGap": 5,
+          "subTitlePosition": "right",
+          "subTitleText": "",
+          "align": "left",
+          "title": {
+            "color": "#fff",
+            "fontSize": 24,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          },
+          "subTitle": {
+            "color": "darkgray",
+            "fontSize": 14,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          }
+        },
+        "chartBody": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "padding": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        }
+      }
+    },
+    {
+      "type": "tileMap",
+      "subType": "basic",
+      "version": "0.0.1",
+      "config": {
+        "global": {
+          "colors": [
+            "#e6f7ff",
+            "#bae7ff",
+            "#91d5ff",
+            "#69c0ff",
+            "#40a9ff",
+            "#1890ff",
+            "#096dd9",
+            "#0050b3"
+          ],
+          "background": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": ""
+          }
+        },
+        "visualMap": {
+          "show": true,
+          "splitNumber": 0,
+          "color": ["#d8d8d8", "#ffffff", "#15699f", "#5284c4"],
+          "min": 0,
+          "max": 100,
+          "orient": "vertical",
+          "textStyle": {
+            "color": "#fff",
+            "fontSize": 14
+          }
+        },
+        "series": [
+          {
+            "type": "tileRegions",
+            "label": {
+              "normal": {
+                "show": false,
+                "position": "top",
+                "textStyle": {
+                  "fontSize": 12,
+                  "color": "white"
+                }
+              },
+              "emphasis": {
+                "show": false,
+                "position": "top",
+                "textStyle": {
+                  "fontSize": 12,
+                  "color": "white"
+                }
+              }
+            },
+            "itemStyle": {
+              "normal": {
+                "areaColor": "#474747",
+                "borderWidth": 1,
+                "borderColor": "black",
+                "shadowBlur": 0,
+                "shadowColor": "rgba(0,0,0,0)",
+                "shadowOffsetX": 0,
+                "shadowOffsetY": 0,
+                "opacity": 1
+              },
+              "emphasis": {
+                "areaColor": "#2a333d",
+                "borderWidth": 1,
+                "borderColor": "black",
+                "shadowBlur": 0,
+                "shadowColor": "rgba(0,0,0,0)",
+                "shadowOffsetX": 0,
+                "shadowOffsetY": 0,
+                "opacity": 1
+              }
+            },
+            "regions": [],
+            "roam": false,
+            "zoom": 1,
+            "center": {
+              "lng": 0,
+              "lat": 0
+            }
+          },
+          {
+            "type": "heatLayer",
+            "show": false,
+            "blurSize": 3,
+            "minOpacity": 0,
+            "maxOpacity": 1,
+            "pointSize": 3
+          },
+          {
+            "type": "rippleBubbleLayer",
+            "maxSymbolSize": 20,
+            "show": false,
+            "rippleEffect": {
+              "period": 4,
+              "scale": 2.5,
+              "brushType": "fill"
+            },
+            "symbol": "circle",
+            "label": {
+              "normal": {
+                "show": false,
+                "position": "top",
+                "textStyle": {
+                  "fontSize": 12,
+                  "color": "white"
+                }
+              },
+              "emphasis": {
+                "show": false,
+                "position": "top",
+                "textStyle": {
+                  "fontSize": 12,
+                  "color": "white"
+                }
+              }
+            },
+            "itemStyle": {
+              "normal": {
+                "color": "rgba(255, 255, 255, 1)",
+                "borderWidth": "0",
+                "borderColor": "rgba(255, 255, 255, 1)",
+                "shadowBlur": "0",
+                "shadowColor": "rgba(255, 255, 255, 1)",
+                "shadowOffsetX": 0,
+                "shadowOffsetY": 0,
+                "opacity": 1
+              },
+              "emphasis": {
+                "color": "rgba(255, 255, 255, 1)",
+                "borderWidth": "0",
+                "borderColor": "rgba(255, 255, 255, 1)",
+                "shadowBlur": "0",
+                "shadowColor": "rgba(255, 255, 255, 1)",
+                "shadowOffsetX": 0,
+                "shadowOffsetY": 0,
+                "opacity": 1
+              }
+            }
+          },
+          {
+            "type": "staticBubbleLayer",
+            "show": false,
+            "symbol": "circle",
+            "maxSymbolSize": 20,
+            "label": {
+              "normal": {
+                "show": false,
+                "position": "top",
+                "textStyle": {
+                  "fontSize": 12,
+                  "color": "white"
+                }
+              },
+              "emphasis": {
+                "show": false,
+                "position": "",
+                "textStyle": {
+                  "fontSize": 12,
+                  "color": "white"
+                }
+              }
+            },
+            "itemStyle": {
+              "normal": {
+                "color": "rgba(255, 255, 255, 1)",
+                "borderWidth": "0",
+                "borderColor": "rgba(255, 255, 255, 1)",
+                "shadowBlur": "0",
+                "shadowColor": "rgba(255, 255, 255, 1)",
+                "shadowOffsetX": 0,
+                "shadowOffsetY": 0,
+                "opacity": 1
+              },
+              "emphasis": {
+                "color": "rgba(255, 255, 255, 1)",
+                "borderWidth": "0",
+                "borderColor": "rgba(255, 255, 255, 1)",
+                "shadowBlur": "0",
+                "shadowColor": "rgba(255, 255, 255, 1)",
+                "shadowOffsetX": 0,
+                "shadowOffsetY": 0,
+                "opacity": 1
+              }
+            }
+          },
+          {
+            "type": "colorLayer",
+            "show": false,
+            "label": {
+              "normal": {
+                "show": false,
+                "position": "top",
+                "textStyle": {
+                  "fontSize": 12,
+                  "color": "white"
+                }
+              },
+              "emphasis": {
+                "show": false,
+                "position": "top",
+                "textStyle": {
+                  "fontSize": 12,
+                  "color": "white"
+                }
+              }
+            },
+            "itemStyle": {
+              "normal": {
+                "areaColor": "#474747",
+                "borderWidth": 1,
+                "borderColor": "black",
+                "shadowBlur": 0,
+                "shadowColor": "rgba(0,0,0,0)",
+                "shadowOffsetX": 0,
+                "shadowOffsetY": 0,
+                "opacity": 1
+              },
+              "emphasis": {
+                "areaColor": "#474747",
+                "borderWidth": 1,
+                "borderColor": "black",
+                "shadowBlur": 0,
+                "shadowColor": "rgba(0,0,0,0)",
+                "shadowOffsetX": 0,
+                "shadowOffsetY": 0,
+                "opacity": 1
+              }
+            }
+          }
+        ],
+        "chartHead": {
+          "show": true,
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "height": 20,
+          "padding": {
+            "top": 5,
+            "right": 5,
+            "bottom": 5,
+            "left": 5
+          },
+          "itemGap": 5,
+          "subTitlePosition": "right",
+          "subTitleText": "",
+          "align": "left",
+          "title": {
+            "color": "#fff",
+            "fontSize": 24,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          },
+          "subTitle": {
+            "color": "darkgray",
+            "fontSize": 14,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          }
+        },
+        "chartBody": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "padding": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        }
+      }
+    },
+    {
+      "type": "scatterChart",
+      "subType": "basic",
+      "version": "0.0.1",
+      "config": {
+        "global": {
+          "colors": [
+            "#e6f7ff",
+            "#bae7ff",
+            "#91d5ff",
+            "#69c0ff",
+            "#40a9ff",
+            "#1890ff",
+            "#096dd9",
+            "#0050b3"
+          ],
+          "background": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": ""
+          }
+        },
+        "legend": {
+          "show": true,
+          "borderRadius": 10,
+          "textStyle": {
+            "fontSize": 14,
+            "fontFamily": "PingFang SC",
+            "color": "#ffffff"
+          },
+          "position": {
+            "top": "auto",
+            "bottom": "auto",
+            "left": "auto",
+            "right": "auto"
+          },
+          "orient": "horizontal",
+          "icon": ""
+        },
+        "series": [
+          {
+            "type": "xAxis",
+            "show": true,
+            "position": "bottom",
+            "inverse": false,
+            "line": {
+              "show": true,
+              "lineStyle": {
+                "thinkness": 2,
+                "color": "#ffffff",
+                "opacity": 1,
+                "type": "solid"
+              }
+            },
+            "label": {
+              "show": true,
+              "inside": false,
+              "angle": 0,
+              "interval": false,
+              "textStyle": {
+                "fontSize": 18,
+                "fontFamily": "PingFang SC",
+                "color": "#aaaaaa"
+              }
+            },
+            "splitLine": {
+              "show": false,
+              "lineStyle": {
+                "width": 1,
+                "color": "#FDB75B",
+                "type": "dashed"
+              }
+            },
+            "name": {
+              "show": false,
+              "position": "",
+              "content": "",
+              "textStyle": {
+                "fontSize": 14,
+                "color": "#fff"
+              }
+            }
+          },
+          {
+            "type": "yAxis",
+            "show": true,
+            "position": "left",
+            "line": {
+              "show": true,
+              "lineStyle": {
+                "thinkness": 2,
+                "color": "#ffffff",
+                "opacity": 1,
+                "type": "solid"
+              }
+            },
+            "label": {
+              "show": true,
+              "inside": false,
+              "angle": 0,
+              "interval": false,
+              "textStyle": {
+                "fontSize": 18,
+                "color": "#aaaaaa"
+              }
+            },
+            "splitLine": {
+              "show": true,
+              "lineStyle": {
+                "width": 1,
+                "color": "#464646",
+                "opacity": 1,
+                "type": "solid"
+              }
+            },
+            "name": {
+              "show": false,
+              "position": "",
+              "content": "",
+              "textStyle": {
+                "fontSize": 14,
+                "color": "#fff"
+              }
+            }
+          },
+          {
+            "type": "scatter",
+            "role": "scatter",
+            "area": {
+              "show": false,
+              "color": "rgba(255, 255, 255, 1)",
+              "areaStyle": {
+                "color": "rgba(128, 128, 128, 0.5)",
+                "shadowBlur": 0,
+                "shadowColor": "rgba(0, 0, 0, 0)",
+                "opacity": 1
+              }
+            },
+            "dot": {
+              "color": "rgba(255, 255, 255, 1)",
+              "useTheme": true,
+              "opacity": 100
+            }
+          }
+        ],
+        "chartHead": {
+          "show": true,
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "height": 20,
+          "padding": {
+            "top": 5,
+            "right": 5,
+            "bottom": 5,
+            "left": 5
+          },
+          "itemGap": 5,
+          "subTitlePosition": "right",
+          "subTitleText": "",
+          "align": "left",
+          "title": {
+            "color": "#fff",
+            "fontSize": 24,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          },
+          "subTitle": {
+            "color": "darkgray",
+            "fontSize": 14,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          }
+        },
+        "chartBody": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "padding": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        }
+      }
+    },
+    {
+      "type": "radarChart",
+      "subType": "line",
+      "version": "0.0.1",
+      "config": {
+        "global": {
+          "colors": [
+            "#e6f7ff",
+            "#bae7ff",
+            "#91d5ff",
+            "#69c0ff",
+            "#40a9ff",
+            "#1890ff",
+            "#096dd9",
+            "#0050b3"
+          ],
+          "background": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": ""
+          }
+        },
+        "legend": {
+          "show": true,
+          "borderRadius": 10,
+          "textStyle": {
+            "fontSize": 14,
+            "fontFamily": "PingFang SC",
+            "color": "#ffffff"
+          },
+          "position": {
+            "top": "auto",
+            "bottom": "auto",
+            "left": "auto",
+            "right": "auto"
+          },
+          "orient": "horizontal",
+          "icon": ""
+        },
+        "style": {
+          "line": true
+        },
+        "shape": "circle",
+        "splitArea": false,
+        "series": [
+          {
+            "type": "rc_labelArray",
+            "fontSize": 8,
+            "labelColor": "rgba(255,255,255,1)",
+            "labelBG": "rgba(111,111,111,1)"
+          },
+          {
+            "type": "rc_dataArray",
+            "weight": 1,
+            "lineType": "solid",
+            "useTheme": true,
+            "color": "rgba(255,255,255,1)"
+          }
+        ],
+        "chartHead": {
+          "show": true,
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "height": 20,
+          "padding": {
+            "top": 5,
+            "right": 5,
+            "bottom": 5,
+            "left": 5
+          },
+          "itemGap": 5,
+          "subTitlePosition": "right",
+          "subTitleText": "",
+          "align": "left",
+          "title": {
+            "color": "#fff",
+            "fontSize": 24,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          },
+          "subTitle": {
+            "color": "darkgray",
+            "fontSize": 14,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          }
+        },
+        "chartBody": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "padding": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        }
+      }
+    },
+    {
+      "type": "radarChart",
+      "subType": "basic",
+      "version": "0.0.1",
+      "config": {
+        "global": {
+          "colors": [
+            "#e6f7ff",
+            "#bae7ff",
+            "#91d5ff",
+            "#69c0ff",
+            "#40a9ff",
+            "#1890ff",
+            "#096dd9",
+            "#0050b3"
+          ],
+          "background": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": ""
+          }
+        },
+        "legend": {
+          "show": true,
+          "borderRadius": 10,
+          "textStyle": {
+            "fontSize": 14,
+            "fontFamily": "PingFang SC",
+            "color": "#ffffff"
+          },
+          "position": {
+            "top": "auto",
+            "bottom": "auto",
+            "left": "auto",
+            "right": "auto"
+          },
+          "orient": "horizontal",
+          "icon": ""
+        },
+        "shape": "circle",
+        "splitArea": false,
+        "style": {
+          "line": false
+        },
+        "series": [
+          {
+            "type": "rc_labelArray",
+            "fontSize": 8,
+            "labelColor": "rgba(255,255,255,1)",
+            "labelBG": "rgba(111,111,111,1)"
+          },
+          {
+            "type": "rc_dataArray",
+            "weight": 1,
+            "lineType": "solid",
+            "useTheme": true,
+            "color": "rgba(255,255,255,1)"
+          }
+        ],
+        "chartHead": {
+          "show": true,
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "height": 20,
+          "padding": {
+            "top": 5,
+            "right": 5,
+            "bottom": 5,
+            "left": 5
+          },
+          "itemGap": 5,
+          "subTitlePosition": "right",
+          "subTitleText": "",
+          "align": "left",
+          "title": {
+            "color": "#fff",
+            "fontSize": 24,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          },
+          "subTitle": {
+            "color": "darkgray",
+            "fontSize": 14,
+            "fontFamily": "",
+            "fontStyle": "normal",
+            "fontWeight": 500
+          }
+        },
+        "chartBody": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "",
+          "padding": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        }
+      }
+    }
+  ]
+}
