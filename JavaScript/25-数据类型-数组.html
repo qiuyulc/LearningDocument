@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数组</title>
+</head>
+<body>
+    <script>
+        /*
+            保存有序数据的集合
+            声明方式：
+            let arr = [];
+            let arr = new Array()
+            一般都是使用第一种方式
+
+            .length 获取数组的长度
+            let arr = [1,2,3,4];
+            console.log(arr.length);4
+
+            获取数组的最后一位
+            let arr = [1,2,3,4];
+            console.log(arr[arr.length-1]);//4
+            js新增属性 at
+            console.log(arr.at(-1));4
+            at 默认为0，当传入的数字为负数时，它会从数组的最后一位向前取值
+
+            pop/push shift/unshift
+
+            shift()从头部弹出
+            pop()从尾部弹出
+            push()从尾部添加
+            unshift()从头部添加
+
+                队列：
+                先进先出
+                栈：
+                先进后出，
+                数组两种方式都可以，在计算机科学中，允许这种操作的称为双端队列
+            内部：
+                数组是一个特殊的对象，使用方括号来访问属性 实际上是一种对象的语法
+                他其实与obj[key]相同，其中arr是对象，二数字用作键(key)
+
+                性能：
+                push/pop方法运行比较快，shift/unshift比较慢
+
+                当你操作头部元素时，头部元素被移除，所有元素向左移动，索引1改为0 依次类推
+                然后更新length属性
+                数组中元素越多，移动他们就要话越多的时间，也就意味着越多的内存操作。
+
+            循环
+                for循环
+                for...of 需要注意的是  for of循环key是数据，没法获得下标哦
+                for...in 理论上是可以处理数组的 
+                    1.for...in循环会遍历所有属性。但在浏览器中有一种称为类数组的对象。他们看似是数组
+                    。也就是说他们有length和索引属性，但是也有可能有其他的非数字的属性和方法，这通常使我们不需要的。for...in
+                    循环会把他们都列出来。所以我们处理类数组对象时，就有可能出现问题
+                    2.for in循环在数组中会慢10-100倍，即使这个你感觉不出来 但是 不应该使用for ... in来处理数组
+            关于length
+                准确的说，他实际上不是数组里元素的个数，而是最大数字索引值+1；
+                let arr = [];
+                arr[100] = 10;
+                console.log(arr.length) 101        
+
+                清空数组最简单的方式是 arr.length=0；
+
+            new Array()
+                创建数组的另一种语法
+                为什么不常用它来创建数组
+                    1.let arr = [] 简单方便明了
+                    2.他有一个比较坑的地方
+                    let arr = new Array(2)
+                    console.log(arr) //[empty × 2]
+                    哎呀我去 怎么回事，是的 这就是这个坑，传入单个参数它会创建一个指定长度但是没有任何项的数组
+                
+            多维数组
+                let matrix = [
+                    [1, 2, 3],
+                    [4, 5, 6],
+                    [7, 8, 9]
+                ];
+
+            toString
+            数组有自己的toString方法的实现，会返回以都好隔开的元素列表
+            let arr = [1,2,3];
+            alert(arr) //'1,2,3'
+            alert(String(arr) === '1,2,3') true 
+
+        */
+    </script>
+</body>
+</html>
