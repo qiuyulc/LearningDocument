@@ -82,10 +82,24 @@
                 ];
 
             toString
-            数组有自己的toString方法的实现，会返回以都好隔开的元素列表
-            let arr = [1,2,3];
-            alert(arr) //'1,2,3'
-            alert(String(arr) === '1,2,3') true 
+                数组有自己的toString方法的实现，会返回以都好隔开的元素列表
+                let arr = [1,2,3];
+                alert(arr) //'1,2,3'
+                alert(String(arr) === '1,2,3') true 
+
+                alert([]+1);
+                alert([1]+1)
+                alert([1,2]+1)
+                你知道上面是什么值吗？
+                '1'/'11'/'1,21'
+
+                这是为什么
+                在数组中，没有Symbol.toPrimitive，也没有valueOf，他们只能执行toString进行转换
+                所以[] 转为了'',[1]转为了'1'
+
+            不要使用==比较两个数组，除非一个是另一个的引用，否则他们永远不会相等
+            
+
 
         */
     </script>

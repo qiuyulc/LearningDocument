@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map and Set(映射和集合)</title>
+</head>
+<body>
+    <script>
+        /*
+            Map 是一个带键的数据想的集合，就像一个Object一样，但是他们最大的区别是Map允许
+            任何类型的键 key
+
+            方法和属性如下：
+            new Map() 创建Map
+            map.set(key,value) 根据键存储值
+            map.get(key) 根据键来返回值，如果map中不存在对应的key，则返回undefined
+            map.has(key) 如果key存在则返回true，否则返回false
+            map.delete(key) 删除指定键的值
+            map.clear()  清空map
+            map.size 返回当前元素个数
+
+            map[key]不是使用Map的正确方式
+
+            虽然有效，但是会将map视为JavaScript的plain object,因此他暗含了所有响应的限制（仅支持string/symbol键等）
+            所以我们应该使用map方法 set和get
+        
+            Map可以使用对象作为键
+            这是他和对象的区别
+            let john = { name: "John" };
+
+            // 存储每个用户的来访次数
+            let visitsCountMap = new Map();
+
+            // john 是 Map 中的键
+            visitsCountMap.set(john, 123);
+
+            alert( visitsCountMap.get(john) ); // 123
+
+            Map是怎么比较键的
+            Map使用SameValueZero算法来比较键是否相等。它和严格等于差不过，但区别是NaN被看成是等于NaN。所以NaN也可以被用作键
+            这个算法不能被改变或者自定义
+
+            链式调用：
+            每一次map.set调用都会返回map自身，所以我们可以进行链式调用
+            map.set('a','1').set('b',2)
+        */
+    </script>
+</body>
+</html>

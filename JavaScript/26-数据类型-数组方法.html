@@ -7,6 +7,48 @@
     <title>数组方法</title>
 </head>
 <body>
-    
+    <script>
+
+        /*
+            添加/删除元素
+                push(...items); 尾端添加元素
+                pop(); 从尾端提取一个元素
+                shift();从首端提取一个元素
+                unshift(...items);向首端添加元素
+                splice(pos,deleteCount,...items)；从pos开始删除deleteCount个元素，并cherubitems
+                slice(start,end) 创建一个新数组，将从start到索引end但不包括end的元素复制进去
+                concat(...items) 返回一个新数组，复制当前数组的所有元素，并向其中添加items，如果items中的任意一项是个数组，name就去取
+                其元素。(解构一层)
+
+            搜索元素
+                indexOf/lastIndexOf(item,pos) 从索引pos开始搜索item，搜索到则返回该项索引
+                    否则返回-1；
+                includes(value) 数组有value，则返回true，否则返回false
+                find/filter(func) 通过func过滤元素，返回使func返回为true的第一个值/所有值
+                findIndex 和 find类似，但返回索引而不是值。
+                
+                forEach(func) 对每个元素都调用func，不返回任何内容
+
+            转换数组
+                map(func) 对每个元素都调用func的结果创建一个新数组
+                sort(func) 对数组进行原位（in-place）排序，然后返回它。
+                reverse() 原子反转数组，然后返回它
+                split/join 将字符串转换为数组并返回
+                reduce/reduceRight(func,initial) 通过对每个元素调用func计算数组上的单个值，并在调用之间传递中间结果。
+            
+            其他
+                Array.isArray(value) 检查value是否是一个数组，如果是则返回true，否则返回false
+
+            注意sort，reverse、splice方法修改的是数组本身
+                
+                arr.some(fn)/arr.every(fn) //根据fn中的条件判断 some有一个真值就返回true并停止迭代 ，every有假值就返回false并停止迭代
+                arr.fill(value,start,end) 从索引start到end 用重复的value填充数组
+                arr.copyWithin(target,start,end) 将从位置start到end所有元素复制到自身target位置 覆盖现有元素
+                arr.flat(depth) /arr.flatMap(fn) 从多维数组创建一个新的扁平数组。
+                    depth表示要递归展示的层数，可以传入Infinity 表示展开多层次数组
+                Array.of(a,b,c,d);将传入的元素创建成一个数组
+        */
+
+    </script>
 </body>
 </html>

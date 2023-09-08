@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>可迭代对象</title>
+</head>
+<body>
+    <script>
+        /*
+            可迭代(Iterable)对象时数组的泛化。这个概念是说任何对象都可以被定制为可在
+                for...of循环中使用的对象。
+            数组是可迭代的，单不仅仅是数组。很多其他内建对象也都是可迭代的。
+            例如字符串也是可迭代的
+
+            Symbol.iterator
+                示例：
+                let range = {
+                    form:1,
+                    to:5
+                }
+
+                for(let num of range){
+                    console.log(num)//Uncaught TypeError: range is not iterable
+                }
+
+                为了让range对象可迭代，我们需要为对象添加一个名为，Symbol.iterator的方法
+                （一个专门用于使对象可迭代的内建symbol）
+                    1.当for...of循环启动时，它会调用这个方法，如果没找到就会报错。这个方法必须返回一个迭代器(iterator) 一个有next方法的对象
+                    2.从此开始，for...of仅适用于这个被返回的对象。
+                    3.当for...of循环希望取得下一个数值，他就调用这个对象的next方法
+                    4.next()方法必须返回的结果的格式为{done:Boolean,value:any}，当done为true时，循环结束，否则value是
+                    下一个值
+
+                完整例子
+                    let range = {
+                        form:1,
+                        to:5
+                    }
+
+                    range[Symbol.iterator] = function(){
+                        return {
+                            current:this.form,
+                            last:this.to,
+                            next(){
+                                if(this.current <= this.last){
+                                    return {done:false,value:this.current++}
+                                }else{
+                                    return {done:true}
+                                }
+                            }
+                        }
+                    }
+
+                    for(let num of range){
+                        console.log(num)//1,2,3,4,5
+                    }
+
+                无穷迭代器(iterator)
+                    无穷迭代器也是可能的。例如，将range设置为rage.to = Infinity，
+                    这是range则成为了无穷迭代器。或者我们可以创建一个可迭代对象。它生成一个无穷伪随机数序列也是可能的。
+                    next没有什么限制，它可以返回越来越多的值，这也是正常的。当然，迭代对象的for...of循环将不会停止。
+                    但是我们可以通过break来停止它。
+
+                字符串时刻迭代的
+
+                显示调用迭代器
+
+                    let str = 'Hello';
+                    let iterator = str[Symbol.iterator]();
+                    whild(true){
+                        let result = iterator.next();
+                        if(result.done) break;
+                        alert(result.value);
+                    }
+
+                可迭代(iterable)和类数组(array-like)
+                    iterable 如上所述，是实现了Symbol.iterator方法的对象。
+                    Array-like是有索引和length属性的对象，所以他们看起来很像数组
+                    类数组没有数组的方法
+                
+                Array.from
+                    Array.from可以接收一个可迭代或类数组的值，并转化为一个真正的数组。
+                    
+                    示例：
+                    let arrayLike = {
+                        0:'Hello',
+                        1:'World',
+                        length:2
+                    }
+
+                    let arr = Array.from(arrayLike);
+                    console.log(arr) //['Hello', 'World']
+
+                    格式：
+                    Array.from(obj,mapFn,thisArg);
+
+                    Array.from(range,(key,index)=>{
+                        return key;
+                    })
+
+
+                总结：
+                可以应用for...of的对象被称为可迭代的
+                    技术上来说，可迭代对象必须实现Symbol.iterator方法
+                        obj[Symbol.iterator]()的结果被称为迭代器（iterator）。
+                        由他来处理进一步的迭代过程
+                        一个迭代器必须有next()方法，他返回一个{done:boolean,value:any} 对象，这里done:true表明迭代结束，否则
+                        就是下一个值
+                    Symbol.iterator方法会被for...of自动调用，但我们也可以直接调用它。
+                    内建的可迭代对象例如字符串和数组，都实现了Symbol.iterator。
+                    字符串迭代器能够识别代理对(srrogate pair).（译注：代理对也就是UTF-16扩展字符串）
+
+                有索引属性和length属性的对象被称为类数组对象。这种对象还具有其他属性和方法，但是没有数组的内建方法。
+                
+                Array.from(obj,mapFn,thisArg)将可迭代对象或类数组对象转化为真正的数组Array，然后我们可以对它应用数组的方法
+                可选参数mapFn和thisArg允许我们将函数应用到每个元素
+        */
+    </script>
+</body>
+</html>
