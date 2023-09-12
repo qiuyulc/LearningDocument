@@ -45,7 +45,98 @@
             链式调用：
             每一次map.set调用都会返回map自身，所以我们可以进行链式调用
             map.set('a','1').set('b',2)
-        */
+
+
+            Map迭代
+            如果要在map里使用循环，可以使用一下三个方法
+            map.keys() 遍历并返回一个包含所有键的可迭代对象
+            map.values() 遍历并返回一个包含所有值的可迭代对象
+            map.entries() 遍历返回一个包含所有实体[key,value]的可迭代对象，for...of在默认情况下使用的就是这个
+            map.forEach((value,key,map)=>{})
+            let recipeMap = new Map([
+            ['cucumber', 500],
+            ['tomatoes', 350],
+            ['onion',    50]
+            ]);
+
+            // 遍历所有的键（vegetables）
+            for (let vegetable of recipeMap.keys()) {
+            alert(vegetable); // cucumber, tomatoes, onion
+            }
+
+            // 遍历所有的值（amounts）
+            for (let amount of recipeMap.values()) {
+            alert(amount); // 500, 350, 50
+            }
+
+            // 遍历所有的实体 [key, value]
+            for (let entry of recipeMap) { // 与 recipeMap.entries() 相同
+            alert(entry); // cucumber,500 (and so on)
+            }
+
+            注意：迭代顺序与插入值的顺序相同，与普通对象不同，Map会保留此顺序
+            
+            Object.entries:从对象创建Map,返回值是一个可迭代对象/值对
+            Object.entries可以返回一个键值对格式的数组正好可以用上
+
+            let obj = {
+                name:'张三',
+                age:30
+            }
+
+            let map = new Map(Object.entries(obj))
+            console.log(map.get('name'))//张三
+        
+            Object.formEntries()从Map或者可迭代对象创建对象
+                let prices = Object.fromEntries([['banana',1],['orange',2],['meat',3]])
+                console.log(prices);//{banana: 1, orange: 2, meat: 3}
+            
+            Set
+                一个特殊的类型集合---值得集合没有键，他的每个值只出现一次
+                主要方法
+                new Set(iterable) 创建一个set，如果提供了一个iterable对象（通常是个数组），将会从数组中复制值到set中
+
+                set.add(value) --添加一个值，返回set本身
+                set.delete(value) --删除值，如果value在这个方法调用时存在就返回true，否则返回false
+                set.has(value) 如果value在set中，返回true，否则返回false
+                set.clear() 清空set
+                set.size   返回元素个数
+
+                Set迭代
+                    for...of 或 forEach来遍历Set
+                    forEach((value,valueAgain,set)=>{})
+                    注意 value和valueAgain值是相同的
+
+                    剩余的 .keys()/.values()/.entries(),
+                    .entries()遍历并返回一个包含所有实体[value,value]的可迭代对象，
+                    它的存在也是为了兼容Map
+                */
+
+                // 练习题
+                function unique(arr) {
+                    /* 你的代码 */
+                    let set = new Set(arr)
+          
+                    return Array.from(set)
+                }
+
+                let values = ["Hare", "Krishna", "Hare", "Krishna",
+                "Krishna", "Krishna", "Hare", "Hare", ":-O"
+                ];
+
+                // alert( unique(values) );
+
+                // 我们期望使用 map.keys() 得到一个数组，然后使用例如 .push 等特定的方法对其进行处理。
+                let map = new Map();
+
+                map.set("name", "John");
+
+                let keys = Array.from(map.keys());
+
+                // Error: keys.push is not a function
+                keys.push("more");
+                console.log(keys);
+
     </script>
 </body>
 </html>
