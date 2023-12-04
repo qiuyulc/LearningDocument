@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON方法</title>
+</head>
+<body>
+    
+    <script>
+
+        /*
+            JSON.stringify
+                将对象转为JSON格式
+            JSON.parse
+                将JSON转为对象
+            JSON.stringify
+            得到的字符串是一个被称为JSON编码（JSON-encoded）或序列化(serialized)或字符串化（stringified）或编组化(marshalled)的对象。
+
+            JSON.stringify特性
+            1.方法会被跳过
+            2.symbol会被跳过
+            3.存储undefined的属性
+            4.不能有循环引用 属性中相互引用嵌套会转换失败
+
+            完整格式
+            JSON.stringify(value,replacer,space)
+            value:要编码的值
+            replacer：要编码的属性数组或映射函数function((key,value))
+            space:用于格式化的空格数量
+            
+            当replacer为数组时
+
+            自定义toJSON
+
+            在对象转换时，我们可以提供一个toJSON方法。在JSON.stringify调用时
+            会自动调用该方法
+            let room = {
+                number: 23
+            };
+
+            let meetup = {
+                title: "Conference",
+                date: new Date(Date.UTC(2017, 0, 1)),
+                room
+            };
+
+            alert( JSON.stringify(meetup) );
+            
+            {
+                "title":"Conference",
+                "date":"2017-01-01T00:00:00.000Z",  // (1)
+                "room": {"number":23}               // (2)
+            }
+            Date都有一个内建的toJSON方法
+
+            自定义toJSON
+            let room = {
+                number: 23,
+                toJSON() {
+                    return this.number;
+                }
+            };
+
+            let meetup = {
+                title: "Conference",
+                room
+            };
+
+            alert( JSON.stringify(room) ); // 23
+
+            alert( JSON.stringify(meetup) );
+
+            {
+                "title":"Conference",
+                "room": 23
+            }
+
+
+            JSON.parse(value,reviver);
+            reviver 表示调用时的一个函数 function(key,value);
+            let str = '{"title":"Conference","date":"2017-11-30T12:00:00.000Z"}';
+
+            let meetup = JSON.parse(str, function(key, value) {
+                if (key == 'date') return new Date(value);
+                return value;
+            });
+
+            alert( meetup.date.getDate() );
+
+
+            总结：
+            JSON是一种数据格式，具有自己的独立标准和大多数变成语言的库
+            JSON支持object，array，string，number，boolean和null
+            JavaScript提供序列化成JSON的方法JSON.stringify和解析JSON的方法JSON.parse
+            如果一个对象具有toJSON ，那么他会被JSON.stringify调用。
+
+*/
+        
+    </script>
+</body>
+</html>
